@@ -1,0 +1,1307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-06-03T04:17:15Z" name="All Test Suite" finished-at="2019-06-03T04:17:39Z" duration-ms="24009">
+    <groups>
+    </groups>
+    <test started-at="2019-06-03T04:17:15Z" name="Validation" finished-at="2019-06-03T04:17:39Z" duration-ms="24009">
+      <class name="com.test.oic.OICvalidatePolicyType">
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:15Z" name="testSetup" finished-at="2019-06-03T04:17:17Z" duration-ms="1625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="validateValidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:17Z" name="validateValidPolicyType" data-provider="policyTypeValidData" finished-at="2019-06-03T04:17:20Z" duration-ms="3517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidPolicyType -->
+        <test-method signature="validateValidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:20Z" name="validateValidPolicyType" data-provider="policyTypeValidData" finished-at="2019-06-03T04:17:21Z" duration-ms="622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidPolicyType -->
+        <test-method signature="validateValidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:21Z" name="validateValidPolicyType" data-provider="policyTypeValidData" finished-at="2019-06-03T04:17:22Z" duration-ms="873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidPolicyType -->
+        <test-method signature="validateValidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:22Z" name="validateValidPolicyType" data-provider="policyTypeValidData" finished-at="2019-06-03T04:17:22Z" duration-ms="687" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v52]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidPolicyType -->
+        <test-method signature="validateValidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:22Z" name="validateValidPolicyType" data-provider="policyTypeValidData" finished-at="2019-06-03T04:17:24Z" duration-ms="1849" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v53]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidPolicyType -->
+        <test-method signature="validateValidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:24Z" name="validateValidPolicyType" data-provider="policyTypeValidData" finished-at="2019-06-03T04:17:28Z" duration-ms="3366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[320]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidPolicyType -->
+        <test-method signature="validateValidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:28Z" name="validateValidPolicyType" data-provider="policyTypeValidData" finished-at="2019-06-03T04:17:29Z" duration-ms="1295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[320]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidPolicyType -->
+        <test-method signature="validateValidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:29Z" name="validateValidPolicyType" data-provider="policyTypeValidData" finished-at="2019-06-03T04:17:30Z" duration-ms="1214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[320]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidPolicyType -->
+        <test-method signature="validateValidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:30Z" name="validateValidPolicyType" data-provider="policyTypeValidData" finished-at="2019-06-03T04:17:31Z" duration-ms="454" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v52]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[320]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidPolicyType -->
+        <test-method signature="validateValidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:31Z" name="validateValidPolicyType" data-provider="policyTypeValidData" finished-at="2019-06-03T04:17:31Z" duration-ms="690" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v53]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[320]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidPolicyType -->
+        <test-method signature="validateInvalidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:31Z" name="validateInvalidPolicyType" data-provider="policyTypeInvalidData" finished-at="2019-06-03T04:17:32Z" duration-ms="1001" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vXX]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInvalidPolicyType -->
+        <test-method signature="validateInvalidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:32Z" name="validateInvalidPolicyType" data-provider="policyTypeInvalidData" finished-at="2019-06-03T04:17:33Z" duration-ms="544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInvalidPolicyType -->
+        <test-method signature="validateInvalidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:33Z" name="validateInvalidPolicyType" data-provider="policyTypeInvalidData" finished-at="2019-06-03T04:17:34Z" duration-ms="793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1 ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[120]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInvalidPolicyType -->
+        <test-method signature="validateInvalidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:34Z" name="validateInvalidPolicyType" data-provider="policyTypeInvalidData" finished-at="2019-06-03T04:17:38Z" duration-ms="4180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInvalidPolicyType -->
+        <test-method signature="validateInvalidPolicyType(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.OICvalidatePolicyType@4567f35d]" started-at="2019-06-03T04:17:38Z" name="validateInvalidPolicyType" data-provider="policyTypeInvalidData" finished-at="2019-06-03T04:17:39Z" duration-ms="1204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v54]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInvalidPolicyType -->
+      </class> <!-- com.test.oic.OICvalidatePolicyType -->
+    </test> <!-- Validation -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

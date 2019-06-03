@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="motor(failed)">
+    <classes>
+      <class name="com.test.oic.TestAPI">
+        <methods>
+          <include name="validateCarAgeOptions" invocation-numbers="0"/>
+          <include name="testOIC"/>
+          <include name="validateCarGroupOptions" invocation-numbers="0 6 7 13 14 20 21 27"/>
+          <include name="validatePolicyTypeWithCarCodeOptions" invocation-numbers="8 9 10 11"/>
+          <include name="testSetup"/>
+        </methods>
+      </class> <!-- com.test.oic.TestAPI -->
+    </classes>
+  </test> <!-- motor(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

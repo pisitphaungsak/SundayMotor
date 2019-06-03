@@ -1,0 +1,5128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="54" passed="40" failed="14" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-06-02T07:34:28Z" name="Default Suite" finished-at="2019-06-02T07:34:48Z" duration-ms="20006">
+    <groups>
+    </groups>
+    <test started-at="2019-06-02T07:34:28Z" name="motor" finished-at="2019-06-02T07:34:48Z" duration-ms="20006">
+      <class name="com.test.oic.TestAPI">
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:28Z" name="testSetup" finished-at="2019-06-02T07:34:30Z" duration-ms="1857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="testOIC(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:30Z" name="testOIC" data-provider="data2" finished-at="2019-06-02T07:34:30Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void com.test.oic.TestAPI.testOIC(double,java.lang.String,java.lang.String,int,int,int,int,int,int,int,int,int,int,int,int,int) requires a @DataProvider named : data2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void com.test.oic.TestAPI.testOIC(double,java.lang.String,java.lang.String,int,int,int,int,int,int,int,int,int,int,int,int,int) requires a @DataProvider named : data2
+at org.testng.internal.Parameters.findDataProvider(Parameters.java:513)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOIC -->
+        <test-method signature="validateCarAgeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:30Z" name="validateCarAgeOptions" data-provider="carAgeTestData" finished-at="2019-06-02T07:34:35Z" duration-ms="4231" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [59638.59] but found [4378.44]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [59638.59] but found [4378.44]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.test.oic.TestAPI.validateCarAgeOptions(TestAPI.java:105)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarAgeOptions -->
+        <test-method signature="validateCarAgeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:35Z" name="validateCarAgeOptions" data-provider="carAgeTestData" finished-at="2019-06-02T07:34:35Z" duration-ms="359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarAgeOptions -->
+        <test-method signature="validateCarAgeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:35Z" name="validateCarAgeOptions" data-provider="carAgeTestData" finished-at="2019-06-02T07:34:35Z" duration-ms="302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarAgeOptions -->
+        <test-method signature="validateCarAgeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:35Z" name="validateCarAgeOptions" data-provider="carAgeTestData" finished-at="2019-06-02T07:34:36Z" duration-ms="294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarAgeOptions -->
+        <test-method signature="validateCarAgeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:36Z" name="validateCarAgeOptions" data-provider="carAgeTestData" finished-at="2019-06-02T07:34:36Z" duration-ms="277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarAgeOptions -->
+        <test-method signature="validateCarAgeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:36Z" name="validateCarAgeOptions" data-provider="carAgeTestData" finished-at="2019-06-02T07:34:36Z" duration-ms="291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarAgeOptions -->
+        <test-method signature="validateCarAgeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:36Z" name="validateCarAgeOptions" data-provider="carAgeTestData" finished-at="2019-06-02T07:34:36Z" duration-ms="293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarAgeOptions -->
+        <test-method signature="validateCarAgeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:36Z" name="validateCarAgeOptions" data-provider="carAgeTestData" finished-at="2019-06-02T07:34:37Z" duration-ms="308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarAgeOptions -->
+        <test-method signature="validateCarAgeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:37Z" name="validateCarAgeOptions" data-provider="carAgeTestData" finished-at="2019-06-02T07:34:37Z" duration-ms="282" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarAgeOptions -->
+        <test-method signature="validateCarAgeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:37Z" name="validateCarAgeOptions" data-provider="carAgeTestData" finished-at="2019-06-02T07:34:37Z" duration-ms="258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarAgeOptions -->
+        <test-method signature="validateCarAgeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:37Z" name="validateCarAgeOptions" data-provider="carAgeTestData" finished-at="2019-06-02T07:34:38Z" duration-ms="266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarAgeOptions -->
+        <test-method signature="validateCarAgeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:38Z" name="validateCarAgeOptions" data-provider="carAgeTestData" finished-at="2019-06-02T07:34:38Z" duration-ms="271" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarAgeOptions -->
+        <test-method signature="validateCarAgeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:38Z" name="validateCarAgeOptions" data-provider="carAgeTestData" finished-at="2019-06-02T07:34:38Z" duration-ms="264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarAgeOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:38Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:38Z" duration-ms="293" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [502]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [502]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:38Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:39Z" duration-ms="286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:39Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:39Z" duration-ms="293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:39Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:39Z" duration-ms="267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:39Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:39Z" duration-ms="238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:39Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:40Z" duration-ms="236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:40Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:40Z" duration-ms="273" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [502]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [502]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:40Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:40Z" duration-ms="266" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [502]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [502]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:40Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:41Z" duration-ms="236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:41Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:41Z" duration-ms="289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:41Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:41Z" duration-ms="242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:41Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:41Z" duration-ms="274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:41Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:42Z" duration-ms="249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:42Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:42Z" duration-ms="266" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [502]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [502]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:42Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:42Z" duration-ms="250" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v52]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [502]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [502]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:42Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:42Z" duration-ms="252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v52]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:42Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:43Z" duration-ms="241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v52]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:43Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:43Z" duration-ms="252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v52]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:43Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:43Z" duration-ms="244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v52]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:43Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:43Z" duration-ms="244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v52]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:43Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:44Z" duration-ms="269" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [502]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [502]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+at jdk.internal.reflect.GeneratedMethodAccessor154.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:44Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:44Z" duration-ms="286" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v53]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [502]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [502]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+at jdk.internal.reflect.GeneratedMethodAccessor154.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:44Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:44Z" duration-ms="257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v53]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:44Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:44Z" duration-ms="237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v53]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:44Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:45Z" duration-ms="256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v53]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:45Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:45Z" duration-ms="237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v53]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:45Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:45Z" duration-ms="258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v53]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validateCarGroupOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:45Z" name="validateCarGroupOptions" data-provider="carGroupTestData" finished-at="2019-06-02T07:34:45Z" duration-ms="272" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v53]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [502]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [502]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+at jdk.internal.reflect.GeneratedMethodAccessor154.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarGroupOptions -->
+        <test-method signature="validatePolicyTypeWithCarCodeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:45Z" name="validatePolicyTypeWithCarCodeOptions" data-provider="policyTypeTestData" finished-at="2019-06-02T07:34:46Z" duration-ms="259" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePolicyTypeWithCarCodeOptions -->
+        <test-method signature="validatePolicyTypeWithCarCodeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:46Z" name="validatePolicyTypeWithCarCodeOptions" data-provider="policyTypeTestData" finished-at="2019-06-02T07:34:46Z" duration-ms="233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[320]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePolicyTypeWithCarCodeOptions -->
+        <test-method signature="validatePolicyTypeWithCarCodeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:46Z" name="validatePolicyTypeWithCarCodeOptions" data-provider="policyTypeTestData" finished-at="2019-06-02T07:34:46Z" duration-ms="243" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePolicyTypeWithCarCodeOptions -->
+        <test-method signature="validatePolicyTypeWithCarCodeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:46Z" name="validatePolicyTypeWithCarCodeOptions" data-provider="policyTypeTestData" finished-at="2019-06-02T07:34:46Z" duration-ms="228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[320]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePolicyTypeWithCarCodeOptions -->
+        <test-method signature="validatePolicyTypeWithCarCodeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:46Z" name="validatePolicyTypeWithCarCodeOptions" data-provider="policyTypeTestData" finished-at="2019-06-02T07:34:47Z" duration-ms="253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePolicyTypeWithCarCodeOptions -->
+        <test-method signature="validatePolicyTypeWithCarCodeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:47Z" name="validatePolicyTypeWithCarCodeOptions" data-provider="policyTypeTestData" finished-at="2019-06-02T07:34:47Z" duration-ms="228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[320]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePolicyTypeWithCarCodeOptions -->
+        <test-method signature="validatePolicyTypeWithCarCodeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:47Z" name="validatePolicyTypeWithCarCodeOptions" data-provider="policyTypeTestData" finished-at="2019-06-02T07:34:47Z" duration-ms="213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v52]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePolicyTypeWithCarCodeOptions -->
+        <test-method signature="validatePolicyTypeWithCarCodeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:47Z" name="validatePolicyTypeWithCarCodeOptions" data-provider="policyTypeTestData" finished-at="2019-06-02T07:34:47Z" duration-ms="238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v53]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePolicyTypeWithCarCodeOptions -->
+        <test-method signature="validatePolicyTypeWithCarCodeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:47Z" name="validatePolicyTypeWithCarCodeOptions" data-provider="policyTypeTestData" finished-at="2019-06-02T07:34:48Z" duration-ms="239" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vXX]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [502]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [502]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions(TestAPI.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePolicyTypeWithCarCodeOptions -->
+        <test-method signature="validatePolicyTypeWithCarCodeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:48Z" name="validatePolicyTypeWithCarCodeOptions" data-provider="policyTypeTestData" finished-at="2019-06-02T07:34:48Z" duration-ms="316" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [502]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [502]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions(TestAPI.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePolicyTypeWithCarCodeOptions -->
+        <test-method signature="validatePolicyTypeWithCarCodeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:48Z" name="validatePolicyTypeWithCarCodeOptions" data-provider="policyTypeTestData" finished-at="2019-06-02T07:34:48Z" duration-ms="260" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[V1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[110]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [502]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [502]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions(TestAPI.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePolicyTypeWithCarCodeOptions -->
+        <test-method signature="validatePolicyTypeWithCarCodeOptions(double, java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int)[pri:0, instance:com.test.oic.TestAPI@7c729a55]" started-at="2019-06-02T07:34:48Z" name="validatePolicyTypeWithCarCodeOptions" data-provider="policyTypeTestData" finished-at="2019-06-02T07:34:48Z" duration-ms="289" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[59638.59]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[120]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1995]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2600000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1000000]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[10000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[2500000]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[200000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[300000]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [502]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [502]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions(TestAPI.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePolicyTypeWithCarCodeOptions -->
+      </class> <!-- com.test.oic.TestAPI -->
+    </test> <!-- motor -->
+  </suite> <!-- Default Suite -->
+</testng-results>

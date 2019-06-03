@@ -1,0 +1,835 @@
+<html>
+<head>
+<title>TestNG:  motor</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>motor</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>40/14/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 02 14:34:28 ICT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>20 seconds (20006 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.oic.TestAPI.testOIC()'><b>testOIC</b><br>Test class: com.test.oic.TestAPI</td>
+<td><div><pre>org.testng.TestNGException: 
+Method public void com.test.oic.TestAPI.testOIC(double,java.lang.String,java.lang.String,int,int,int,int,int,int,int,int,int,int,int,int,int) requires a @DataProvider named : data2
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1398260359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1398260359'><pre>org.testng.TestNGException: 
+Method public void com.test.oic.TestAPI.testOIC(double,java.lang.String,java.lang.String,int,int,int,int,int,int,int,int,int,int,int,int,int) requires a @DataProvider named : data2
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:513)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:691)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarAgeOptions()'><b>validateCarAgeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 0, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td><div><pre>java.lang.AssertionError: expected [59638.59] but found [4378.44]
+	at com.test.oic.TestAPI.validateCarAgeOptions(TestAPI.java:105)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace691863815", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace691863815'><pre>java.lang.AssertionError: expected [59638.59] but found [4378.44]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.test.oic.TestAPI.validateCarAgeOptions(TestAPI.java:105)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>4</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 3, 2600000, 0, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [502]
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace431939256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace431939256'><pre>java.lang.AssertionError: expected [200] but found [502]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 3, 2600000, 10, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [502]
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1629032994", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1629032994'><pre>java.lang.AssertionError: expected [200] but found [502]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v2, 110, 1995, 0, 3, 2600000, 0, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [502]
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1445534206", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1445534206'><pre>java.lang.AssertionError: expected [200] but found [502]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v2, 110, 1995, 0, 3, 2600000, 10, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [502]
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace651535127", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace651535127'><pre>java.lang.AssertionError: expected [200] but found [502]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v52, 110, 1995, 0, 3, 2600000, 0, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [502]
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1381386227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1381386227'><pre>java.lang.AssertionError: expected [200] but found [502]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v5, 110, 1995, 0, 3, 2600000, 10, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [502]
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1970880279", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1970880279'><pre>java.lang.AssertionError: expected [200] but found [502]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+	at jdk.internal.reflect.GeneratedMethodAccessor154.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v53, 110, 1995, 0, 3, 2600000, 0, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [502]
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1415390560", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1415390560'><pre>java.lang.AssertionError: expected [200] but found [502]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+	at jdk.internal.reflect.GeneratedMethodAccessor154.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v53, 110, 1995, 0, 3, 2600000, 10, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [502]
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1571815485", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1571815485'><pre>java.lang.AssertionError: expected [200] but found [502]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.test.oic.TestAPI.validateCarGroupOptions(TestAPI.java:141)
+	at jdk.internal.reflect.GeneratedMethodAccessor154.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions()'><b>validatePolicyTypeWithCarCodeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, vXX, 110, 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [502]
+	at com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions(TestAPI.java:68)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace104803851", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace104803851'><pre>java.lang.AssertionError: expected [200] but found [502]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions(TestAPI.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions()'><b>validatePolicyTypeWithCarCodeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59,  v1, 110, 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [502]
+	at com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions(TestAPI.java:68)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1055317122", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1055317122'><pre>java.lang.AssertionError: expected [200] but found [502]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions(TestAPI.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions()'><b>validatePolicyTypeWithCarCodeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, V1, 110, 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [502]
+	at com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions(TestAPI.java:68)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1662549347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1662549347'><pre>java.lang.AssertionError: expected [200] but found [502]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions(TestAPI.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions()'><b>validatePolicyTypeWithCarCodeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 120, 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [502]
+	at com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions(TestAPI.java:68)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace625411191", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace625411191'><pre>java.lang.AssertionError: expected [200] but found [502]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions(TestAPI.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarAgeOptions()'><b>validateCarAgeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 1, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarAgeOptions()'><b>validateCarAgeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 2, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarAgeOptions()'><b>validateCarAgeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarAgeOptions()'><b>validateCarAgeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 4, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarAgeOptions()'><b>validateCarAgeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 5, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarAgeOptions()'><b>validateCarAgeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 6, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarAgeOptions()'><b>validateCarAgeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 7, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarAgeOptions()'><b>validateCarAgeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 8, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarAgeOptions()'><b>validateCarAgeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 9, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarAgeOptions()'><b>validateCarAgeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 10, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarAgeOptions()'><b>validateCarAgeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 11, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarAgeOptions()'><b>validateCarAgeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 1000, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 3, 2600000, 1, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 3, 2600000, 3, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 3, 2600000, 4, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 3, 2600000, 5, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v2, 110, 1995, 0, 3, 2600000, 1, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v2, 110, 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v2, 110, 1995, 0, 3, 2600000, 3, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v2, 110, 1995, 0, 3, 2600000, 4, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v2, 110, 1995, 0, 3, 2600000, 5, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v52, 110, 1995, 0, 3, 2600000, 1, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v52, 110, 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v52, 110, 1995, 0, 3, 2600000, 3, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v52, 110, 1995, 0, 3, 2600000, 4, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v52, 110, 1995, 0, 3, 2600000, 5, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v53, 110, 1995, 0, 3, 2600000, 1, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v53, 110, 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v53, 110, 1995, 0, 3, 2600000, 3, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v53, 110, 1995, 0, 3, 2600000, 4, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validateCarGroupOptions()'><b>validateCarGroupOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v53, 110, 1995, 0, 3, 2600000, 5, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions()'><b>validatePolicyTypeWithCarCodeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 110, 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions()'><b>validatePolicyTypeWithCarCodeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v1, 320, 4, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions()'><b>validatePolicyTypeWithCarCodeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v2, 110, 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions()'><b>validatePolicyTypeWithCarCodeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v2, 320, 4, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions()'><b>validatePolicyTypeWithCarCodeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v3, 110, 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions()'><b>validatePolicyTypeWithCarCodeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v3, 320, 4, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions()'><b>validatePolicyTypeWithCarCodeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v52, 110, 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+<tr>
+<td title='com.test.oic.TestAPI.validatePolicyTypeWithCarCodeOptions()'><b>validatePolicyTypeWithCarCodeOptions</b><br>Test class: com.test.oic.TestAPI<br>Parameters: 59638.59, v53, 110, 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0</td>
+<td></td>
+<td>0</td>
+<td>com.test.oic.TestAPI@7c729a55</td></tr>
+</table><p>
+</body>
+</html>
