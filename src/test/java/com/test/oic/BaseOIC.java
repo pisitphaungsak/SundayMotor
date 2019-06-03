@@ -1,6 +1,5 @@
 package com.test.oic;
 
-import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
@@ -24,7 +23,7 @@ public class BaseOIC {
     }
 
 
-    public void assignParameter(double sellNet, String policyType, String carCode, int engineSize, int driverAge, int carAge, int sumInsured, int carGroup, int injuryTPPerson, int injuryTPTime, int injuryTPDamage, int seat, int coverageLifeloss, int coverageMedical, int coverageBailbond, int deductible){
+    public void assignParameter(double sellNet, String policyType, String carCode, double engineSize, int driverAge, int carAge, int sumInsured, int carGroup, int injuryTPPerson, int injuryTPTime, int injuryTPDamage, int seat, int coverageLifeloss, int coverageMedical, int coverageBailbond, int deductible) {
 
         pathParam.put("sellNet", sellNet);
         pathParam.put("policyType", policyType);
