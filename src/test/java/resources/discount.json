@@ -1,0 +1,62 @@
+[
+  {
+    "ncb": 0,
+    "group": 0,
+    "direct": 0
+  },
+  {
+    "ncb": 0,
+    "group": 0.1,
+    "direct": 0
+  },
+  {
+    "ncb": 0.1,
+    "group": 0,
+    "direct": 0
+  },
+  {
+    "ncb": 0.2,
+    "group": 0,
+    "direct": 0
+  },
+  {
+    "ncb": 0.2,
+    "group": 0.1,
+    "direct": 0
+  },
+  {
+    "ncb": 0.3,
+    "group": 0,
+    "direct": 0
+  },
+  {
+    "ncb": 0.3,
+    "group": 0.1,
+    "direct": 0
+  },
+  {
+    "ncb": 0.4,
+    "group": 0,
+    "direct": 0
+  },
+  {
+    "ncb": 0.4,
+    "group": 0.1,
+    "direct": 0
+  },
+  {
+    "ncb": 0.5,
+    "group": 0,
+    "direct": 0
+  },
+  {
+    "ncb": 0.5,
+    "group": 0.1,
+    "direct": 0
+  },
+  {
+    "ncb": 0.5,
+    "group": 0.1,
+    "direct": 0.05
+  }
+]
