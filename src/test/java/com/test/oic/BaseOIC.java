@@ -4,6 +4,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeTest;
+import utilities.OICDiscount;
 
 import java.util.HashMap;
 
@@ -44,4 +45,92 @@ public class BaseOIC {
 
     }
 
+    public double calcDeductible(double deductValue) {
+        if ((deductValue >= 0) && (deductValue <= 5000)) {
+            return deductValue;
+        } else if (deductValue > 5000) {
+            return 5000 + ((deductValue - 5000) * 0.1);
+        } else {
+            return 0.00;
+        }
+
+    }
+
+    public double calcDiscount(double basePrice, double NCBRate, double groupRate, double directRate) {
+        OICDiscount oicDiscount = new OICDiscount();
+
+        oicDiscount.setNCBDiscountValue(basePrice * NCBRate);
+
+        oicDiscount.setGroupDiscountValue((basePrice - oicDiscount.getNCBDiscountValue()) * groupRate);
+
+        oicDiscount.setDirectDiscountValue((basePrice - oicDiscount.getNCBDiscountValue() + oicDiscount.getGroupDiscountValue()) * directRate);
+
+        return (oicDiscount.getNCBDiscountValue() + oicDiscount.getGroupDiscountValue() + oicDiscount.getDirectDiscountValue());
+
+    }
+
+    public double calcVAT(double inPremiumTotal, double inStamp) {
+
+        if ((inPremiumTotal + inStamp) >= 0) {
+            return (inPremiumTotal + inStamp) * 0.07;
+        }
+        return 0;
+    }
+
+    public double calcStamp(double inPremiumTotal) {
+
+        return Math.ceil(inPremiumTotal * 0.004);
+    }
+
+    public double calcMedical(String carCode, int seatNumber, int medical) {
+
+        if (carCode == "110") {
+            switch (medical) {
+                case 50000:
+                    return seatNumber * 50;
+                case 100000:
+                    return seatNumber * 19;
+
+                case 200000:
+                    return seatNumber * 25;
+
+                case 300000:
+                    return seatNumber * 28;
+
+                case 400000:
+                    return seatNumber * 29;
+
+                case 500000:
+                    return seatNumber * 30;
+
+            }
+
+        } else if (carCode == "320") {
+            switch (medical) {
+                case 50000:
+                    return seatNumber * 50;
+
+                case 100000:
+                    return seatNumber * 90;
+
+                case 200000:
+                    return seatNumber * 110;
+
+                case 300000:
+                    return seatNumber * 120;
+
+                case 400000:
+                    return seatNumber * 130;
+
+                case 500000:
+                    return seatNumber * 135;
+
+            }
+
+        }
+        return 0.0;
+
+    }
 }
+
+

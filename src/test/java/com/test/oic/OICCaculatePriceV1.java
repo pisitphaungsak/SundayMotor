@@ -6,8 +6,6 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static java.lang.Math.round;
-
 public class OICCaculatePriceV1 extends BaseOIC {
 
 
@@ -59,6 +57,7 @@ public class OICCaculatePriceV1 extends BaseOIC {
         var request = RestAssured.given().spec(requestSpec);
         assignParameter(sellNet, policyType, carCode, engineSize, driverAge, carAge, sumInsured, carGroup, injuryTPPerson, injuryTPTime, injuryTPDamage, seat, coverageLifeloss, coverageMedical, coverageBailbond, deductible);
         request.body(pathParam);
+
         double expectedSellNet = 0;
         double expectedPremiumTotalBeforeDiscount = 0;
         double execpecdAdditionalCoverage = 0;
@@ -69,8 +68,9 @@ public class OICCaculatePriceV1 extends BaseOIC {
 
         //Act
         Response response = request.post(APIPath);
-
         float actualBasePremium = response.getBody().jsonPath().get("BasePremium");
+
+
         System.out.println("BasePremium = " + actualBasePremium);
 
 

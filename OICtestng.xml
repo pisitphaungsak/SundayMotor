@@ -9,7 +9,15 @@
                     <include name="validateInvalidPolicyType"/>
                 </methods>
             </class>
+
+            <class name="com.test.oic.OICCaculatePriceV1">
+                <methods>
+                    <include name="test1"/>
+                </methods>
+            </class>
+
         </classes>
+
     </test>
 
 

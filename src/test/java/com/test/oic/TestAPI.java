@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import utilities.OICCalc;
+
 import java.util.HashMap;
 
 
@@ -109,13 +109,7 @@ public class TestAPI {
     }
 
 
-    public double CalulateWithNewBasePremium(double newBasePremium, double newNCBRate, double newDirectRate) {
-        OICCalc oicCalc = new OICCalc();
-        // double newSellNet = oicCalc.caleBase("v1","320",13543.93,1.00,0.92,1.00,)
 
-
-        return 0;
-    }
 
 
 
