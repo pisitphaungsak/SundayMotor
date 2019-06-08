@@ -57,13 +57,27 @@ public class BaseOIC {
     }
 
     public double calcDiscount(double basePrice, double NCBRate, double groupRate, double directRate) {
+        double ReducePriceNCB;
+        double ReducePriceGroup;
+        double ReducePriceDirect;
+        double newBasePrice;
+
         OICDiscount oicDiscount = new OICDiscount();
 
-        oicDiscount.setNCBDiscountValue(basePrice * NCBRate);
+        ReducePriceNCB = basePrice * NCBRate;
+        oicDiscount.setNCBDiscountValue(ReducePriceNCB);
 
-        oicDiscount.setGroupDiscountValue((basePrice - oicDiscount.getNCBDiscountValue()) * groupRate);
+        newBasePrice = basePrice - ReducePriceNCB;
 
-        oicDiscount.setDirectDiscountValue((basePrice - oicDiscount.getNCBDiscountValue() + oicDiscount.getGroupDiscountValue()) * directRate);
+        ReducePriceGroup = newBasePrice * groupRate;
+
+        oicDiscount.setGroupDiscountValue(ReducePriceGroup);
+
+        newBasePrice = newBasePrice - ReducePriceGroup;
+
+        ReducePriceDirect = newBasePrice * directRate;
+
+        oicDiscount.setDirectDiscountValue(ReducePriceDirect);
 
         return (oicDiscount.getNCBDiscountValue() + oicDiscount.getGroupDiscountValue() + oicDiscount.getDirectDiscountValue());
 
