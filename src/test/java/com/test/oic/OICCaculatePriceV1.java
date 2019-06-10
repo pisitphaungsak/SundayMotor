@@ -181,7 +181,7 @@ public class OICCaculatePriceV1 extends BaseOIC {
 
         ttl_dis = calcDiscount(basetotal, 0.5, 0.1, 0.05);
 
-        System.out.println("total" + ttl_dis);
+        System.out.println("total : " + ttl_dis);
 
 
     }
