@@ -9,8 +9,8 @@ import org.testng.annotations.Test;
 public class OICvalidateSumInsureOptionsV1Code110 extends BaseOIC{
 
 
-    @Test(dataProvider = "sumInsure110ValidOptionsTestData")
-    public void validateSumInsureValidOptions(double sellNet, String policyType, String carCode, double engineSize, int driverAge, int carAge, int sumInsured, int carGroup, int injuryTPPerson, int injuryTPTime, int injuryTPDamage, int seat, int coverageLifeloss, int coverageMedical, int coverageBailbond, int deductible) {
+    @Test(dataProvider = "V1Code110SumInsureOptionsTestData")
+    public void validateSumInsureValidOptionsV1Code110(double sellNet, String policyType, String carCode, double engineSize, int driverAge, int carAge, int sumInsured, int carGroup, int injuryTPPerson, int injuryTPTime, int injuryTPDamage, int seat, int coverageLifeloss, int coverageMedical, int coverageBailbond, int deductible) {
         //Arrange
         double expectedSellNet =sellNet;
         var request = RestAssured.given().spec(requestSpec);
@@ -21,11 +21,12 @@ public class OICvalidateSumInsureOptionsV1Code110 extends BaseOIC{
 
         //Assert
         Assert.assertEquals(200, response.getStatusCode());
+        Assert.assertTrue(response.getBody().jsonPath().get("IsValid"));
         Assert.assertTrue(compareNumber(response.getBody().jsonPath().get("SellNet"),expectedSellNet));
     }
 
-    @DataProvider(name = "sumInsure110ValidOptionsTestData")
-    public Object[][] sumInsure110ValidOptionsTestData() {
+    @DataProvider(name = "V1Code110SumInsureOptionsTestData")
+    public Object[][] V1Code110SumInsureOptionsTestData() {
         return new Object[][]{
                 {11686.54,"v1","110",1995,0,3,50000,2,1000000,10000000,2500000,7,200000,200000,300000,0},
                 {11686.54,"v1","110",1995,0,3,60000,2,1000000,10000000,2500000,7,200000,200000,300000,0},

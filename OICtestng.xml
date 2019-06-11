@@ -3,19 +3,17 @@
 <suite name="All Test Suite" parallel="false">
     <test verbose="2" preserve-order="true" name="Validation">
         <classes>
-            <class name="com.test.oic.OICvalidatePolicyType">
+            <class name="com.test.oic.OICvalidateSumInsureOptionsV1Code110">
                 <methods>
-                    <include name="validateValidPolicyType"/>
-                    <include name="validateInvalidPolicyType"/>
+                    <include name="validateSumInsureValidOptionsV1Code110"/>
                 </methods>
             </class>
 
-            <class name="com.test.oic.OICCaculatePriceV1">
+            <class name="com.test.oic.OICvalidateSumInsureOptionsV2Code110">
                 <methods>
-                    <include name="test1"/>
+                    <include name="validateSumInsureValidOptionsV2Code110"/>
                 </methods>
             </class>
-
         </classes>
 
     </test>
