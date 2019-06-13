@@ -1,18 +1,16 @@
 package steps;
 
-import base.BaseUtil;
 import base.BaseWebUI;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import io.restassured.RestAssured;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.http.ContentType;
 import org.openqa.selenium.chrome.ChromeDriver;
-import utilities.RestAssuredExtenstion;
+import pages.SundayAdminPage;
+
+import java.util.concurrent.TimeUnit;
+
 
 public class Hook extends BaseWebUI {
-
 
     private BaseWebUI base;
 
@@ -23,19 +21,22 @@ public class Hook extends BaseWebUI {
     @Before
     public void InitializeTest() {
         //Arrange
-        System.out.println("Open Chrome browser");
-        //base.Driver = new ChromeDriver();
-        base.StepInfo = "Chrome";
+
+
+        base.Driver = new ChromeDriver();
+
+
 
     }
 
     @After
-    public void TearDownTest(Scenario scenario) {
+    public void TearDownTest(Scenario scenario) throws InterruptedException {
 
-        if (scenario.isFailed()) {
-            System.out.println(scenario.getName());
+        if (scenario.isFailed()){
+            System.out.println(scenario.getName() + " is failed");
         }
-        System.out.println("Ens of test : MOCK");
+        Thread.sleep(10000);
+        base.Driver.quit();
 
     }
 }

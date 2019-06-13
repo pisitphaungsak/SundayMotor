@@ -40,34 +40,8 @@ public class OCIPriceCalculationSteps {
 
     }
 
-    @When("^I call to the OIC API$")
-    public void iCallToTheOICAPI() {
-    }
-
-    @Then("^The return code is OK$")
-    public void theReturnCodeIsOK() {
-    }
-
-    @And("^The return policy status is valid$")
-    public void theReturnPolicyStatusIsValid() {
-    }
-
-    @And("^The return Sell Net price is nearly same the input Sell net price$")
-    public void theReturnSellNetPriceIsNearlySameTheInputSellNetPrice() {
-
-    }
-
-    @And("^The return discount option is valid$")
-    public void theReturnDiscountOptionIsValid() {
-        //Arrange
-        Boolean isDiscountOptions = true;
-
-        //Act
-
-        //Assert
 
 
-    }
 
     @And("^The return base price of policy type one is in range$")
     public void theReturnBasePriceOfPolicyTypeOneIsInRange() {
