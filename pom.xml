@@ -25,13 +25,31 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19</version>
             </plugin>
+            <plugin>
+                <groupId>net.masterthought</groupId>
+                <artifactId>maven-cucumber-reporting</artifactId>
+                <version>4.1.1</version>
+                <executions>
+                    <execution>
+                        <id>execution</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>generate</goal>
+
+                        </goals>
+                        <configuration>
+                            <projectName>MotorAutomation</projectName>
+                            <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
+                            <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+                        </configuration>
+                    </execution>
+
+
+
+                </executions>
+            </plugin>
         </plugins>
     </build>
-
-
-
-
-
 
 
     <dependencies>
@@ -121,7 +139,7 @@
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-testng</artifactId>
-            <version>1.2.5</version>
+            <version>1.2.4</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
@@ -140,10 +158,7 @@
         </dependency>
 
 
-
-
     </dependencies>
-
 
 
 </project>
