@@ -18,6 +18,9 @@ public class BaseWebUI {
     public String testUserName = "pisit.ph@easysunday.com";
     public String testPassword = "Welcome1";
 
+    public String grabHomePage_prod ="https://grab.easysunday.com";
+
+
 
 
 

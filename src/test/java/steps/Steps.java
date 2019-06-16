@@ -9,6 +9,7 @@ import cucumber.api.java.en.When;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.SundayGrabHomePage;
 import pages.SundayHomePage;
 import pages.SundayLoginPage;
 
@@ -44,7 +45,7 @@ public class Steps extends BaseWebUI {
 
         users = table.asList(User.class);
         for (User user : users) {
-            loginPage.inputUserNamePassword(user.username,user.password);
+            loginPage.inputUserNamePassword(user.username, user.password);
         }
     }
 
@@ -80,9 +81,7 @@ public class Steps extends BaseWebUI {
     public void iOpenUserProfilePage() {
         SundayHomePage sundayHome = new SundayHomePage(base.Driver);
         WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
-
         waiter.until(ExpectedConditions.elementToBeClickable(sundayHome.lblOpenUserProfile));
-
         sundayHome.lblOpenUserProfile.click();
     }
 
@@ -92,6 +91,23 @@ public class Steps extends BaseWebUI {
         Actions actions = new Actions(base.Driver);
         actions.moveToElement(sundayHome.lblFooterBrokerName);
         actions.perform();
+
+    }
+
+    @And("^Login to Sunday by use below information$")
+    public void loginToSunday(DataTable table) {
+        SundayGrabHomePage sundayGrabHome = new SundayGrabHomePage(base.Driver);
+        SundayLoginPage loginPage = new SundayLoginPage(base.Driver);
+        sundayGrabHome.lblLoginPage.click();
+
+        List<User> users = new ArrayList<User>();
+
+        users = table.asList(User.class);
+        for (User user : users) {
+            loginPage.inputUserNamePassword(user.username, user.password);
+        }
+
+        loginPage.btnLogin_click();
 
     }
 
