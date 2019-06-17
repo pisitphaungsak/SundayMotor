@@ -22,9 +22,35 @@ public class SundayHomePage {
     @FindBy(how = How.XPATH,using = "//a[contains(text(),'pisit.ph@easysunday.com')]")
     public WebElement lblOpenUserProfile;
 
+    @FindBy(how = How.XPATH,using = "//a[contains(text(),'single.policy@gmail.com')]")
+    public WebElement lblOpenSinglePolicyProfile;
+
+    @FindBy(how = How.XPATH,using = "//a[contains(text(),'multiple.policy@gmail.com')]")
+    public WebElement lblOpenMultiplePolicyProfile;
+
+    @FindBy(how = How.XPATH,using = "//a[contains(text(),'no.policy@gmail.com')]")
+    public WebElement lblOpenNoPolicyProfile;
+
+    @FindBy(how = How.XPATH,using = "//a[contains(text(),'expire.policy@gmail.com')]")
+    public WebElement lblOpenExpirePolicyProfile;
+
+    @FindBy(how = How.XPATH,using = "//a[contains(text(),'cancel.policy@gmail.com')]")
+    public WebElement lblOpenCancelPolicyProfile;
+
 
     @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/div[11]/div[2]/span")
     public WebElement lblFooterBrokerName;
+
+    //  User Profile editor
+    @FindBy(how = How.XPATH,using = "//button[@class='ProfileUser__editIcon']")
+    public WebElement btnUserProfileEdit;
+
+    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/div/div[2]/div[1]/div[2]/form/div[1]/div[2]/div[1]/div/input")
+    public WebElement txtEditFirstName;
+
+    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/div/div[2]/div[1]/div[2]/form/div[1]/div[2]/div[3]/div/input")
+    public WebElement txtEditLastName;
+
 
 
     public void openCarInsurePricePage(){

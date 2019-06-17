@@ -7,6 +7,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.SundayGrabHomePage;
 
 import java.util.List;
@@ -145,4 +148,61 @@ public class GrabSteps extends BaseWebUI {
         grabHomePage.btnConfirmSummary.click();
 
     }
+
+
+
+    @Then("^Select camera installed options ([^\"]*)$")
+    public void selectCameraInsrtalledOptionsDashcamera(String installed) {
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
+        SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
+        Actions actions = new Actions(base.Driver);
+        //actions.moveToElement(grabHomePage.btncameraInstalled).click();
+        //actions.click();
+        actions.click(grabHomePage.btncameraNotInstalled);
+        actions.perform();
+/*
+        if (installed =="yes") {
+            System.out.print("Camera installed");
+            actions.click(grabHomePage.btncameraInstalled);
+        actions.perform();
+        }else if (installed =="no"){
+            System.out.print("Camera not installed");
+            actions.click(grabHomePage.btncameraNotInstalled);
+            actions.perform();
+        }
+*/
+        grabHomePage.btnCameraNext.submit();
+
+
+    }
+
+    @Then("^Select spicify driver \\? ([^\"]*)$")
+    public void selectSepicificDriverSpecifydriver(String selectedOptions) {
+        SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
+        Actions actions = new Actions(base.Driver);
+        waiter.until(ExpectedConditions.elementToBeClickable(grabHomePage.btnNotSpecifyDriver));
+
+
+        //grabHomePage.btnNotSpecifyDriver.click();
+
+        actions.click(grabHomePage.btnNotSpecifyDriver);
+        actions.perform();
+
+        if (selectedOptions =="yes") {
+            actions.click(grabHomePage.btnSpecifyDriver);
+            actions.perform();
+        } else if (selectedOptions =="no"){
+            actions.click(grabHomePage.btnNotSpecifyDriver);
+            actions.perform();
+        }
+        grabHomePage.btnSpecifyDriverNext.click();
+
+
+
+       // grabHomePage.btnSpecifyDriverNext.click();
+
+
+    }
+
 }

@@ -11,7 +11,6 @@ public class BaseWebUI {
 
     public String adnminBaseURL = "https://admin-staging-02.easysunday.com/";
 
-    public String menuMotorPolicy = "admin/menu/motor-policy";
 
 
 

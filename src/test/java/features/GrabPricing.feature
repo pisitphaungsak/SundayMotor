@@ -24,11 +24,15 @@ Feature: Get grab pricing
     And Select car model <carmodel>
     And Select car sub-model <submodel>
     Then click next button for moving to next page
+    Then Select camera installed options <dashcamera>
+    Then Select spicify driver ? <specifydriver>
 
 
-    And I select car with <carmake> , <caryear> , <model> and <submodel>
+
+
+    And I select car with <carmake> , <caryear> , <carmodel> and <submodel>
 
     Examples:
-      | carmake | caryear | carmodel | submodel                                            |
-      | Toyota  | 2016    | Vios     | Sedan 4dr J Man 5sp FWD 1.5i                        |
-      | Ford    | 2014    | Focus    | Sedan 4dr Titanium+ Auto 6sp FWD 2.0i (Luxury Pack) |
+      | carmake | caryear | carmodel | submodel                                            | dashcamera | specifydriver | v1mininsure | v1maxinsure | v1price | v52mininsure | v52maxinsure | v52price | v53mininsure | v53maxinsure | v53price |
+      | Toyota  | 2016    | Vios     | Sedan 4dr J Man 5sp FWD 1.5i                        | no         | no            | 300000      | 37000       | 12600   | 300000       | 37000        | 8500     | 300000       | 37000        | 5500     |
+      | Ford    | 2014    | Focus    | Sedan 4dr Titanium+ Auto 6sp FWD 2.0i (Luxury Pack) | no         | no            | 300000      | 37000       | 12600   | 300000       | 37000        | 8500     | 300000       | 37000        | 5500     |

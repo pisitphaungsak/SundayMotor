@@ -51,6 +51,34 @@ public class SundayGrabHomePage {
     @FindBy(how = How.XPATH, using = "//div[@class='GoToCarPlateButton']//a")
     public WebElement btnConfirmSummary;
 
+    //Camera
+    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/div[1]/div/form/div[1]/div[1]")
+    public WebElement btncameraInstalled;
+
+    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/div[1]/div/form/div[1]/div[2]")
+    public WebElement btncameraNotInstalled;
+
+    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/div[1]/div/form/div[2]/div[2]/button")
+    public WebElement btnCameraNext;
+
+    //Specify Driver
+    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/div[1]/div/form/div/div[2]/button[1]")
+    public WebElement btnNotSpecifyDriver;
+
+    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/div[1]/div/form/div/div[2]/button[2]")
+    public WebElement btnSpecifyDriver;
+
+    @FindBy(how = How.XPATH,using = "//button[@class='BasicInfoSpecifyDriver__nextButton']")
+    public WebElement btnSpecifyDriverNext;
+
+
+
+
+
+
+
+
+
 
     public void selectCarBrandCarmake(String carMake) {
         boolean isFound = false;

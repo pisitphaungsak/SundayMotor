@@ -2,6 +2,7 @@ package steps;
 
 import base.BaseWebUI;
 import cucumber.api.DataTable;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -109,6 +110,78 @@ public class Steps extends BaseWebUI {
 
         loginPage.btnLogin_click();
 
+    }
+
+
+    @And("^Open single\\.profile profile page$")
+    public void openSingleProfileProfilePage() {
+        SundayHomePage sundayHome = new SundayHomePage(base.Driver);
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
+        waiter.until(ExpectedConditions.elementToBeClickable(sundayHome.lblOpenSinglePolicyProfile));
+        sundayHome.lblOpenSinglePolicyProfile.click();
+    }
+
+    @And("^Open multiple\\.profile profile page$")
+    public void openMultipleProfileProfilePage() {
+        SundayHomePage sundayHome = new SundayHomePage(base.Driver);
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
+        waiter.until(ExpectedConditions.elementToBeClickable(sundayHome.lblOpenMultiplePolicyProfile));
+        sundayHome.lblOpenMultiplePolicyProfile.click();
+    }
+
+    @And("^Open no\\.profile profile page$")
+    public void openNoProfileProfilePage() {
+
+        SundayHomePage sundayHome = new SundayHomePage(base.Driver);
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
+        waiter.until(ExpectedConditions.elementToBeClickable(sundayHome.lblOpenNoPolicyProfile));
+        sundayHome.lblOpenNoPolicyProfile.click();
+    }
+
+    @And("^Open expire\\.profile profile page$")
+    public void openExpireProfileProfilePage() {
+        SundayHomePage sundayHome = new SundayHomePage(base.Driver);
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
+        waiter.until(ExpectedConditions.elementToBeClickable(sundayHome.lblOpenExpirePolicyProfile));
+        sundayHome.lblOpenExpirePolicyProfile.click();
+    }
+
+    @And("^Open cancel\\.profile profile page$")
+    public void openCancelProfileProfilePage() {
+        SundayHomePage sundayHome = new SundayHomePage(base.Driver);
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
+        waiter.until(ExpectedConditions.elementToBeClickable(sundayHome.lblOpenCancelPolicyProfile));
+        sundayHome.lblOpenCancelPolicyProfile.click();
+    }
+
+    @And("^Open edit user info page$")
+    public void openEditUserInfoPage() {
+        SundayHomePage sundayHome = new SundayHomePage(base.Driver);
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
+        waiter.until(ExpectedConditions.elementToBeClickable(sundayHome.btnUserProfileEdit));
+        sundayHome.btnUserProfileEdit.click();
+
+    }
+
+
+
+
+
+    @And("^Modify user profile first name \"([^\"]*)\"$")
+    public void modifyUserProfileFirstName(String firstname)  {
+        SundayHomePage sundayHome = new SundayHomePage(base.Driver);
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
+        waiter.until(ExpectedConditions.elementToBeClickable(sundayHome.txtEditFirstName));
+        sundayHome.txtEditFirstName.sendKeys(firstname);
+
+
+    }
+
+    @And("^Modify user profile last name \"([^\"]*)\"$")
+    public void modifyUserProfileLastName(String lastname) throws Throwable {
+        SundayHomePage sundayHome = new SundayHomePage(base.Driver);
+
+        sundayHome.txtEditLastName.sendKeys(lastname);
     }
 
     public class User {

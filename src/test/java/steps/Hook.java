@@ -21,17 +21,11 @@ public class Hook extends BaseWebUI {
     @Before
     public void InitializeTest() {
         //Arrange
-
-
         base.Driver = new ChromeDriver();
-
-
-
     }
 
     @After
     public void TearDownTest(Scenario scenario) throws InterruptedException {
-
         if (scenario.isFailed()){
             System.out.println(scenario.getName() + " is failed");
         }
