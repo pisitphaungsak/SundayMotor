@@ -189,10 +189,14 @@ public class Steps extends BaseWebUI {
     public void iClickSaveButtonOnUserProfileEditorPage() {
         SundayHomePage sundayHome = new SundayHomePage(base.Driver);
 
-        Select drpCountry = new Select(sundayHome.provinceList);
+        Select drpProvince= new Select(sundayHome.provinceList);
+        Select drpDistrictList= new Select(sundayHome.districtList);
+        Select drpSubDistrictList= new Select(sundayHome.subDistrictList);
         Actions actions = new Actions(base.Driver);
 
-        drpCountry.selectByVisibleText("สระบุรี");
+        drpProvince.selectByVisibleText("นนทบุรี");
+        drpDistrictList.selectByVisibleText("เมืองนนทบุรี");
+        drpSubDistrictList.selectByVisibleText("ตลาดขวัญ");
         //sundayHome.btnSaveUserProfile.submit();
 
 
