@@ -51,6 +51,8 @@ public class SundayHomePage {
     @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/div/div[2]/div[1]/div[2]/form/div[1]/div[2]/div[3]/div/input")
     public WebElement txtEditLastName;
 
+    @FindBy(how = How.XPATH,using = "//button[@class='FormContactInfo__saveButton']")
+    public WebElement btnSaveUserProfile;
 
 
     public void openCarInsurePricePage(){

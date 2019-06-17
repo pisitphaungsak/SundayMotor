@@ -59,4 +59,6 @@ Feature: User Profile
     And Open edit user info page
     And Modify user profile first name "Motor"
     And Modify user profile last name "Tester"
+    And I click save button on user profile editor page
+
 

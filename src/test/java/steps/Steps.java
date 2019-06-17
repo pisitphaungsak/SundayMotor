@@ -184,6 +184,14 @@ public class Steps extends BaseWebUI {
         sundayHome.txtEditLastName.sendKeys(lastname);
     }
 
+    @And("^I click save button on user profile editor page$")
+    public void iClickSaveButtonOnUserProfileEditorPage() {
+        SundayHomePage sundayHome = new SundayHomePage(base.Driver);
+        sundayHome.btnSaveUserProfile.click();
+
+
+    }
+
     public class User {
         public String username;
         public String password;
