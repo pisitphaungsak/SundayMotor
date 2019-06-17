@@ -3,6 +3,7 @@ package com.test.oic;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
+import io.restassured.http.Header;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
@@ -59,6 +60,9 @@ public class TestAPI {
         pathParam.put("deductible", deductible);
 
         request.body(pathParam);
+
+
+
 
         //Act
         Response response = request.post(APIPath);

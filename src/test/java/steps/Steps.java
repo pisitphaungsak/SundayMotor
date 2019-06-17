@@ -2,7 +2,7 @@ package steps;
 
 import base.BaseWebUI;
 import cucumber.api.DataTable;
-import cucumber.api.PendingException;
+
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -10,6 +10,7 @@ import cucumber.api.java.en.When;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.Select;
 import pages.SundayGrabHomePage;
 import pages.SundayHomePage;
 import pages.SundayLoginPage;
@@ -187,7 +188,18 @@ public class Steps extends BaseWebUI {
     @And("^I click save button on user profile editor page$")
     public void iClickSaveButtonOnUserProfileEditorPage() {
         SundayHomePage sundayHome = new SundayHomePage(base.Driver);
-        sundayHome.btnSaveUserProfile.click();
+
+        Select drpCountry = new Select(sundayHome.provinceList);
+        Actions actions = new Actions(base.Driver);
+
+        drpCountry.selectByVisibleText("สระบุรี");
+        //sundayHome.btnSaveUserProfile.submit();
+
+
+        actions.moveToElement(sundayHome.btnSaveUserProfile);
+        actions.perform();
+        actions.click(sundayHome.btnSaveUserProfile);
+        actions.perform();
 
 
     }

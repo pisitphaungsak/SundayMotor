@@ -82,7 +82,6 @@ public class SundayGrabHomePage {
 
     public void selectCarBrandCarmake(String carMake) {
         boolean isFound = false;
-        //SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
         List<WebElement> carmakelist = carMakeList.findElements(By.tagName("li"));
         for (WebElement li : carmakelist) {
 
