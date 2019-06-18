@@ -1,5 +1,6 @@
 Feature: User Profile
 
+  @Test
   Scenario: Open user profile page
     Given I open sunday login page
     And I enter the following for login
@@ -48,7 +49,7 @@ Feature: User Profile
     And I click login button
     And Open cancel.profile profile page
 
-  @Test
+
   Scenario: Open user profile editor page
     Given I open sunday login page
     And I enter the following for login
@@ -60,5 +61,9 @@ Feature: User Profile
     And Modify user profile first name "Motor"
     And Modify user profile last name "Tester"
     And I click save button on user profile editor page
+
+
+
+
 
 

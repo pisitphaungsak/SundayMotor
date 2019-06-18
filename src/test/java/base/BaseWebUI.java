@@ -9,9 +9,11 @@ public class BaseWebUI {
     //URL
     public String baseURL = "https://staging-02.easysunday.com/";
 
+    //public String baseURL = "https://staging-02.easysunday.com/";
+
     public String adnminBaseURL = "https://admin-staging-02.easysunday.com/";
 
-
+    public String motorBaseURL = "https://motor-fe-mot213.easysunday.com/";
 
 
     public String testUserName = "pisit.ph@easysunday.com";

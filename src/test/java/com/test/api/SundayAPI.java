@@ -15,10 +15,14 @@ public class SundayAPI extends BaseAPI{
         responseToken = getToken(email,password);
 
         System.out.println("Token "+ responseToken );
-
-
-
         request.header(new Header("Authorization","Bearer "+ responseToken));
+
+    }
+
+
+    @Test
+    public void updateDocumentStatusTest(){
+
 
     }
 }

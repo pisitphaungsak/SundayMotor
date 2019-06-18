@@ -16,6 +16,7 @@ public class AdminMotorPoliciesSteps extends BaseWebUI {
     private BaseWebUI base;
 
 
+
     public AdminMotorPoliciesSteps(BaseWebUI base) {
 
         this.base = base;
@@ -59,6 +60,7 @@ public class AdminMotorPoliciesSteps extends BaseWebUI {
     public void openAdminPage() {
         SundayAdminPage adminPage = new SundayAdminPage(base.Driver);
         WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
+
 
         adminPage.inputAdminLoginInfo(testUserName, testPassword);
         adminPage.btnAdminLogin_click();

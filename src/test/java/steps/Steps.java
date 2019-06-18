@@ -197,8 +197,6 @@ public class Steps extends BaseWebUI {
         drpProvince.selectByVisibleText("นนทบุรี");
         drpDistrictList.selectByVisibleText("เมืองนนทบุรี");
         drpSubDistrictList.selectByVisibleText("ตลาดขวัญ");
-        //sundayHome.btnSaveUserProfile.submit();
-
 
         actions.moveToElement(sundayHome.btnSaveUserProfile);
         actions.perform();

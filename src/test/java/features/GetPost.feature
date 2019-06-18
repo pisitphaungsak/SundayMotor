@@ -3,8 +3,9 @@ Feature:
 
 
   Scenario: Verify one author of the post
-    Given I perform GET operation for "/post"
-    And I perform GET for the post number "1"
-    Then I should see the authow name as "Pisit P"
+    Given Get token id for below user
+      | email                   | password |
+      | single.policy@gmail.com | motor9   |
+    When I get
 
 
