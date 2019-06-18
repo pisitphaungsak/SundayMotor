@@ -71,6 +71,30 @@ public class SundayGrabHomePage {
     @FindBy(how = How.XPATH,using = "//button[@class='BasicInfoSpecifyDriver__nextButton']")
     public WebElement btnSpecifyDriverNext;
 
+    // Policy Type
+    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/form/div/div[1]")
+    public WebElement btnPlanOne;
+
+    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/form/div/div[2]")
+    public WebElement btnPlanTwoPlus;
+
+    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/form/div/div[3]")
+    public WebElement btnPlanThreePlus;
+
+
+
+    @FindBy(how = How.XPATH,using = "//div[contains(text(),'remove_circle_outline')]")
+    public WebElement btnReduceSumInsure;
+
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[5]/div[2]/form/div[4]/select")
+    public WebElement deductibleList;
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[5]/div[2]/div[1]/div/div[1]/span[2]")
+    public WebElement lblPolicyPrice;
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[5]/div[2]/form/div[3]/div/div[2]/div[2]/div[1]/div[2]")
+    public WebElement lblSumInsure;
 
 
 

@@ -25,14 +25,19 @@ Feature: Get grab pricing
     And Select car sub-model <submodel>
     Then click next button for moving to next page
     Then Select camera installed options <dashcamera>
-    Then Select spicify driver ? <specifydriver>
-
-
+    Then Select specify driver ? <specifydriver>
+    Then Open policy plan customize page <policytype>
+    And Compare grabpricing with <policytype>, <mininsured> , <maxinsured> , <deductible> , <premiumbeforediscount> and <freshclaim>
 
 
     And I select car with <carmake> , <caryear> , <carmodel> and <submodel>
 
     Examples:
-      | carmake | caryear | carmodel | submodel                                            | dashcamera | specifydriver | v1mininsure | v1maxinsure | v1price | v52mininsure | v52maxinsure | v52price | v53mininsure | v53maxinsure | v53price |
-      | Toyota  | 2016    | Vios     | Sedan 4dr J Man 5sp FWD 1.5i                        | no         | no            | 300000      | 37000       | 12600   | 300000       | 37000        | 8500     | 300000       | 37000        | 5500     |
-      | Ford    | 2014    | Focus    | Sedan 4dr Titanium+ Auto 6sp FWD 2.0i (Luxury Pack) | no         | no            | 300000      | 37000       | 12600   | 300000       | 37000        | 8500     | 300000       | 37000        | 5500     |
+      | carmake | caryear | carmodel | submodel                                     | dashcamera | specifydriver | policytype | mininsured | maxinsured | deductible | premiumbeforediscount | freshclaim |
+      | Toyota  | 2015    | Prius    | Hatch 4dr Hybrid Standard grade CVT FWD 1.8i | no         | no            | 1          | 100000     | 300000     | 5000       | 12500                 | 0          |
+      | Toyota  | 2015    | Prius    | Hatch 4dr Hybrid Standard grade CVT FWD 1.8i | no         | no            | 1          | 300001     | 500000     | 5000       | 13910                 | 0          |
+      | Toyota  | 2015    | Prius    | Hatch 4dr Hybrid Standard grade CVT FWD 1.8i | no         | no            | 1          | 500001     | 700000     | 5000       | 16585                 | 0          |
+
+
+      #| Toyota  | 2015    | Prius    | Hatch 4dr Hybrid Standard grade CVT FWD 1.8i | no         | no            | 52         | 0          | 1000000000 | 0          | 7197                  | 250000     |
+      #| Toyota  | 2015    | Prius    | Hatch 4dr Hybrid Standard grade CVT FWD 1.8i | no         | no            | 53         | 0          | 1000000000 | 2000       | 4741                  | 250000     |

@@ -9,7 +9,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import pages.SundayGrabHomePage;
 
 import java.util.List;
@@ -25,7 +27,7 @@ public class GrabSteps extends BaseWebUI {
 
     @Given("^Open Sunday Grab Home Page$")
     public void openSundayGrabHomePage() {
-        base.Driver.navigate().to(base.grabHomePage_prod);
+        base.Driver.navigate().to(base.grabHomePage_test);
         base.Driver.manage().window().maximize();
         base.Driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
     }
@@ -150,7 +152,6 @@ public class GrabSteps extends BaseWebUI {
     }
 
 
-
     @Then("^Select camera installed options ([^\"]*)$")
     public void selectCameraInsrtalledOptionsDashcamera(String installed) {
         WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
@@ -176,33 +177,79 @@ public class GrabSteps extends BaseWebUI {
 
     }
 
-    @Then("^Select spicify driver \\? ([^\"]*)$")
-    public void selectSepicificDriverSpecifydriver(String selectedOptions) {
+    @Then("^Select specify driver \\? ([^\"]*)$")
+    public void selectSpecifyDriverSpecifydriver(String selectedOptions) {
         SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
         WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
         Actions actions = new Actions(base.Driver);
         waiter.until(ExpectedConditions.elementToBeClickable(grabHomePage.btnNotSpecifyDriver));
 
 
-        //grabHomePage.btnNotSpecifyDriver.click();
-
         actions.click(grabHomePage.btnNotSpecifyDriver);
         actions.perform();
 
-        if (selectedOptions =="yes") {
+        if (selectedOptions == "yes") {
             actions.click(grabHomePage.btnSpecifyDriver);
             actions.perform();
-        } else if (selectedOptions =="no"){
+        } else if (selectedOptions == "no") {
             actions.click(grabHomePage.btnNotSpecifyDriver);
             actions.perform();
         }
         grabHomePage.btnSpecifyDriverNext.click();
+    }
 
+    @Then("^Open policy plan customize page ([^\"]*)$")
+    public void openPolicyPlanCustomizePagePolicytype(int policyType) {
+        SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
+        if (policyType == 1) {
+            System.out.println("Select Plan A");
+            grabHomePage.btnPlanOne.click();
+        } else if (policyType == 52) {
+            System.out.println("Select Plan B");
+            grabHomePage.btnPlanTwoPlus.click();
+        } else if (policyType == 53) {
+            System.out.println("Select Plan C");
+            grabHomePage.btnPlanThreePlus.click();
+        }
+    }
 
+    @And("^Compare grabpricing with ([^\"]*), ([^\"]*) , ([^\"]*) , ([^\"]*) , ([^\"]*) and ([^\"]*)$")
+    public void compareGrabpricingWithPolicytypeMininsuredMaxinsuredDeductiblePremiumbeforediscountAndFreshclaim(int policyType, int minInsure, int maxInsure, int deductibal, int premiumBeforDiscount, int freshclaim) {
+        SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
+        Select deductList = new Select(grabHomePage.deductibleList);
+        Actions actions = new Actions(base.Driver);
 
-       // grabHomePage.btnSpecifyDriverNext.click();
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
+        waiter.until(ExpectedConditions.elementToBeClickable(grabHomePage.deductibleList));
 
+        int cnvPolicyPricing;
+        int cnvSumInsure = cnvCurrency2Int(grabHomePage.lblSumInsure.getText());
+
+        actions.moveToElement(grabHomePage.deductibleList);
+        actions.perform();
+        deductList.selectByVisibleText("฿0");
+        actions.moveToElement(grabHomePage.btnReduceSumInsure);
+        actions.perform();
+
+        if (cnvSumInsure > maxInsure) {
+            do {
+                grabHomePage.btnReduceSumInsure.click();
+
+                cnvSumInsure = cnvCurrency2Int(grabHomePage.lblSumInsure.getText());
+            } while (cnvSumInsure > maxInsure);
+        }
+        cnvPolicyPricing = cnvCurrency2Int(grabHomePage.lblPolicyPrice.getText());
+
+        //Assert
+        Assert.assertEquals(cnvPolicyPricing, premiumBeforDiscount, "Pass !!");
 
     }
 
+    private int cnvCurrency2Int(String inputStr) {
+        String tmp = inputStr.substring(1, inputStr.length());
+        tmp = tmp.replace(",", "");
+
+        return Integer.parseInt(tmp);
+
+    }
 }

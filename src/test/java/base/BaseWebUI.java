@@ -21,6 +21,8 @@ public class BaseWebUI {
 
     public String grabHomePage_prod ="https://grab.easysunday.com";
 
+    public String grabHomePage_test= "https://grab.test.easysunday.com";
+
 
 
 
