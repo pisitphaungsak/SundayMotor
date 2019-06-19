@@ -87,7 +87,9 @@ public class SundayGrabHomePage {
     public WebElement btnReduceSumInsure;
 
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[5]/div[2]/form/div[4]/select")
+    //@FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[5]/div[2]/form/div[4]/select")
+
+    @FindBy(how = How.XPATH, using = "//select[@class='CustomizationSelect__select']")
     public WebElement deductibleList;
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[5]/div[2]/div[1]/div/div[1]/span[2]")
@@ -161,6 +163,20 @@ public class SundayGrabHomePage {
         }
         if (isFound == false) {
             System.out.println("Car Sub-Model : " + submodel + " not found !!");
+        }
+    }
+
+    public void selectDeduct(String deduct) {
+        boolean isFound = false;
+        List<WebElement> deductlist = deductibleList.findElements(By.tagName("option"));
+        for (WebElement option : deductlist) {
+            if (option.getText().equals(deduct)) {
+                isFound = true;
+                option.click();
+            }
+        }
+        if (isFound == false) {
+            System.out.println("Car Sub-Model : " + deduct + " not found !!");
         }
     }
 }

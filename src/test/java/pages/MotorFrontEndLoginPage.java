@@ -21,6 +21,13 @@ public class MotorFrontEndLoginPage {
     @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[1]/div[2]/div/section/div/form/div[3]/div/div/span/button")
     public WebElement btnLogin;
 
+    @FindBy(how = How.XPATH,using = "//div[@class='Login__error']")
+    public WebElement lblErrorMsg;
+
+    @FindBy(how = How.XPATH,using = "//button[@class='ant-btn Login__form__button']")
+    public WebElement btnsignUpWithGoogle;
+
+
 
     public void inputUserNamePassword(String userName, String passWord){
         txtUserName.sendKeys(userName);

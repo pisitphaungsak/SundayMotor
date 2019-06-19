@@ -29,7 +29,7 @@ public class Hook extends BaseWebUI {
         if (scenario.isFailed()){
             System.out.println(scenario.getName() + " is failed");
         }
-        Thread.sleep(10000);
+        Thread.sleep(2000);
         base.Driver.quit();
 
     }

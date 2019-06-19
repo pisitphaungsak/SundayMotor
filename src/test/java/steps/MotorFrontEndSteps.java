@@ -2,9 +2,16 @@ package steps;
 
 import base.BaseWebUI;
 import cucumber.api.DataTable;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pages.MotorFrontEndLoginPage;
 import pages.MotorFrontEndHomePage;
@@ -18,7 +25,6 @@ public class MotorFrontEndSteps extends BaseWebUI {
     private BaseWebUI base;
 
 
-
     public MotorFrontEndSteps(BaseWebUI base) {
 
         this.base = base;
@@ -26,7 +32,7 @@ public class MotorFrontEndSteps extends BaseWebUI {
     }
 
 
-    @Given("^Open Motor Front End Home Page$")
+    @Given("^Open Motor Front End Home Page Without user login$")
     public void openMotorFrontEndHomePage() {
         MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
         base.Driver.navigate().to(base.motorBaseURL);
@@ -80,7 +86,7 @@ public class MotorFrontEndSteps extends BaseWebUI {
         MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
 
         //Assert
-        Assert.assertEquals(FEHome.lblUserName.getText(),userName);
+        Assert.assertEquals(FEHome.lblUserName.getText(), userName);
 
     }
 
@@ -88,5 +94,128 @@ public class MotorFrontEndSteps extends BaseWebUI {
     public void openMotorFrontendLoginPage() {
         MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
         FEHome.lblLogin.click();
+    }
+
+    @And("^click on user name$")
+    public void clickOnUserName() {
+        MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
+        FEHome.lblUserName.click();
+
+    }
+
+
+    @Then("^validate top thai menu with this data \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" ,\"([^\"]*)\" and \"([^\"]*)\"$")
+    public void validateTopThaiMenuWithTnisDataAnd(String menu1, String menu2, String menu3, String menu4, String menu5, String menu6) {
+        MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
+
+        Assert.assertEquals(menu1, FEHome.lnkHomeTop.getText());
+        Assert.assertEquals(menu2, FEHome.lnkFAQTop.getText());
+        Assert.assertEquals(menu3, FEHome.lnkClaimsTop.getText());
+        Assert.assertEquals(menu4, FEHome.lnkHistoryTop.getText());
+        Assert.assertEquals(menu5, FEHome.lnkblogTop.getText());
+        Assert.assertEquals(menu6, FEHome.lnklogoutTop.getText());
+
+
+    }
+
+    @When("^I change to english langluage$")
+    public void iChangeToEnglishLanglauge() {
+        MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
+        FEHome.lblChangeToEnglishTop.click();
+
+    }
+
+    @Then("^validate top english menu with this data \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" ,\"([^\"]*)\" and \"([^\"]*)\"$")
+    public void validateTopEnglishMenuWithThisDataAnd(String menu1, String menu2, String menu3, String menu4, String menu5, String menu6) throws Throwable {
+        MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
+        Assert.assertEquals(menu1, FEHome.lnkHomeTop.getText());
+        Assert.assertEquals(menu2, FEHome.lnkFAQTop.getText());
+        Assert.assertEquals(menu3, FEHome.lnkClaimsTop.getText());
+        Assert.assertEquals(menu4, FEHome.lnkHistoryTop.getText());
+        Assert.assertEquals(menu5, FEHome.lnkblogTop.getText());
+        Assert.assertEquals(menu6, FEHome.lnklogoutTop.getText());
+    }
+
+    @When("^I click the menu icon for open left menu$")
+    public void iClickTheMenuIconForOpenLeftMenu() {
+        MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
+        FEHome.btnLettMenu.click();
+    }
+
+    @And("^I sign up a user with Google$")
+    public void iSignUpAUserWithGoogle() throws InterruptedException {
+        MotorFrontEndLoginPage FELogin = new MotorFrontEndLoginPage(base.Driver);
+
+        FELogin.btnsignUpWithGoogle.click();
+
+        Thread.sleep(5000);
+    }
+
+    @Given("^Login to google with below user$")
+    public void loginToGoogleWithBelowUser(DataTable table) {
+        base.Driver.navigate().to("https://accounts.google.com/AccountChooser?service=mail&continue=https://mail.google.com/mail/");
+        base.Driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 10);
+
+
+        WebElement txtEmail = base.Driver.findElement(By.xpath("//*[@id=\"identifierId\"]"));
+
+        WebElement btnNext = base.Driver.findElement(By.xpath("//div[@class='ZFr60d CeoRYc']"));
+
+        WebElement txtPassword = base.Driver.findElement(By.name("password"));
+
+        waiter.until(ExpectedConditions.elementToBeClickable(txtEmail));
+
+        txtEmail.sendKeys("test1998.profiles@gmail.com");
+        btnNext.click();
+
+        txtPassword.sendKeys("GM3in@B*");
+
+
+    }
+
+    @Then("^validate left thai menu with out user login with this data \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" , \"([^\"]*)\" ,\"([^\"]*)\" and \"([^\"]*)\"$")
+    public void validateLeftThaiMenuWithOutUserLoginWithThisDataAnd(String menu1, String menu2, String menu3, String menu4, String menu5, String menu6) throws Throwable {
+        MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
+        Assert.assertEquals(menu1, FEHome.lnkHomeLeft.getText());
+        Assert.assertEquals(menu2, FEHome.lnkFAQLeft.getText());
+        Assert.assertEquals(menu3, FEHome.lnkClaimsLeft.getText());
+        Assert.assertEquals(menu4, FEHome.lnkHistoryLeft.getText());
+        Assert.assertEquals(menu5, FEHome.lnkblogLeft.getText());
+        Assert.assertEquals(menu6, FEHome.lnkLoginSundayLeft.getText());
+
+    }
+
+    @And("^I click \"([^\"]*)\" lable on top menu for switch langluage$")
+    public void iClickLableOnTopMenuForSwitchLangluage(String arg0) throws InterruptedException {
+        MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 10);
+        Actions actions = new Actions(base.Driver);
+        waiter.until(ExpectedConditions.elementToBeClickable(FEHome.btnEnglishTop));
+
+
+        do {
+            actions.moveToElement(FEHome.btnEnglishTop).click();
+            actions.perform();
+        } while (FEHome.lnkHomeTop.getText() == "Home");
+
+
+
+
+        /*
+        if (arg0 =="EN") {
+            FEHome.btnEnglishTop.click();
+        } else if (arg0 =="ไทย"){
+            FEHome.btnThaiTop.click();
+
+        }
+*/
+    }
+
+    @And("^I click \"([^\"]*)\" lable on left menu for switch langluage$")
+    public void iClickLableOnLeftMenuForSwitchLangluage(String arg0) {
+        MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
+        FEHome.btnEnglishLeft.click();
     }
 }

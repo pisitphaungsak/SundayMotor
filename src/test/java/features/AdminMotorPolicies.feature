@@ -14,3 +14,5 @@ Feature: Admin Motor Policies
     And Login to the Admin page
     And Open Motor Policies menu
     And I open All Motor  Policies sub menu
+    And Search a policy by user policy number
+

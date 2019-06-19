@@ -114,11 +114,6 @@ public class GrabSteps extends BaseWebUI {
         }
     }
 
-    @And("^I select car with ([^\"]*) , ([^\"]*) , ([^\"]*) and ([^\"]*)$")
-    public void iSelectCarWithCarmakeCaryearModelAndSubmodel(String carMake, String carYear, String carModel, String carSubModl) {
-        SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
-    }
-
     @And("^Select car brand ([^\"]*)$")
     public void selectCarBrandCarmake(String carMake) {
         SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
@@ -202,13 +197,10 @@ public class GrabSteps extends BaseWebUI {
     public void openPolicyPlanCustomizePagePolicytype(int policyType) {
         SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
         if (policyType == 1) {
-            System.out.println("Select Plan A");
             grabHomePage.btnPlanOne.click();
         } else if (policyType == 52) {
-            System.out.println("Select Plan B");
             grabHomePage.btnPlanTwoPlus.click();
         } else if (policyType == 53) {
-            System.out.println("Select Plan C");
             grabHomePage.btnPlanThreePlus.click();
         }
     }
@@ -218,30 +210,45 @@ public class GrabSteps extends BaseWebUI {
         SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
         Select deductList = new Select(grabHomePage.deductibleList);
         Actions actions = new Actions(base.Driver);
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 10);
 
-        WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
         waiter.until(ExpectedConditions.elementToBeClickable(grabHomePage.deductibleList));
 
         int cnvPolicyPricing;
         int cnvSumInsure = cnvCurrency2Int(grabHomePage.lblSumInsure.getText());
 
-        actions.moveToElement(grabHomePage.deductibleList);
-        actions.perform();
-        deductList.selectByVisibleText("฿0");
-        actions.moveToElement(grabHomePage.btnReduceSumInsure);
-        actions.perform();
+        do {
+            actions.moveToElement(grabHomePage.deductibleList);
+            actions.perform();
+            waiter.until(ExpectedConditions.elementToBeClickable(grabHomePage.deductibleList)).click();
+            deductList.selectByIndex(0);
+        } while (grabHomePage.deductibleList.getText().trim() ==  "฿0");
 
-        if (cnvSumInsure > maxInsure) {
-            do {
-                grabHomePage.btnReduceSumInsure.click();
 
-                cnvSumInsure = cnvCurrency2Int(grabHomePage.lblSumInsure.getText());
-            } while (cnvSumInsure > maxInsure);
+        if (policyType == 1) {
+            waiter.until(ExpectedConditions.elementToBeClickable(grabHomePage.btnReduceSumInsure));
+            actions.moveToElement(grabHomePage.btnReduceSumInsure);
+            actions.perform();
+
+            if (cnvSumInsure > maxInsure) {
+                do {
+                    grabHomePage.btnReduceSumInsure.click();
+
+                    cnvSumInsure = cnvCurrency2Int(grabHomePage.lblSumInsure.getText());
+                } while (cnvSumInsure > maxInsure);
+            }
         }
+
+
         cnvPolicyPricing = cnvCurrency2Int(grabHomePage.lblPolicyPrice.getText());
 
+
         //Assert
-        Assert.assertEquals(cnvPolicyPricing, premiumBeforDiscount, "Pass !!");
+        //Assert.assertEquals(cnvPolicyPricing, premiumBeforDiscount);
+
+        Assert.assertTrue(comparePrice(cnvPolicyPricing,premiumBeforDiscount));
+
+        System.out.print("Price on Web is " + cnvPolicyPricing + " And Reference price  is " + premiumBeforDiscount);
 
     }
 
@@ -251,5 +258,14 @@ public class GrabSteps extends BaseWebUI {
 
         return Integer.parseInt(tmp);
 
+    }
+
+    private boolean comparePrice(int priceFromWeb, int priceFromRef) {
+        boolean resultOutput = false;
+
+        if ((priceFromWeb == priceFromRef) || (priceFromWeb - priceFromRef) <= 2 || (priceFromRef - priceFromWeb) <= 2) {
+            resultOutput = true;
+        }
+        return resultOutput;
     }
 }
