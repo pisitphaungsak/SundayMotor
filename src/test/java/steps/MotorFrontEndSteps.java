@@ -41,16 +41,17 @@ public class MotorFrontEndSteps extends BaseWebUI {
     }
 
     @And("^I enter the following for Motor FE login$")
-    public void iEnterTheFollowingForMotorFELogin(DataTable table) {
+    public void iEnterTheFollowingForMotorFELogin(DataTable table) throws InterruptedException {
 
         MotorFrontEndLoginPage loginPage = new MotorFrontEndLoginPage(base.Driver);
-
         List<Steps.User> users = new ArrayList<Steps.User>();
 
         users = table.asList(Steps.User.class);
         for (Steps.User user : users) {
             loginPage.inputUserNamePassword(user.username, user.password);
         }
+
+        Thread.sleep(2000);
     }
 
     @And("^I click login button for Motor FE$")
@@ -118,7 +119,7 @@ public class MotorFrontEndSteps extends BaseWebUI {
 
     }
 
-    @When("^I change to english langluage$")
+    @When("^I change to english language$")
     public void iChangeToEnglishLanglauge() {
         MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
         FEHome.lblChangeToEnglishTop.click();
@@ -201,21 +202,39 @@ public class MotorFrontEndSteps extends BaseWebUI {
         } while (FEHome.lnkHomeTop.getText() == "Home");
 
 
-
-
-        /*
-        if (arg0 =="EN") {
-            FEHome.btnEnglishTop.click();
-        } else if (arg0 =="ไทย"){
-            FEHome.btnThaiTop.click();
-
-        }
-*/
     }
 
     @And("^I click \"([^\"]*)\" lable on left menu for switch langluage$")
     public void iClickLableOnLeftMenuForSwitchLangluage(String arg0) {
         MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
         FEHome.btnEnglishLeft.click();
+    }
+
+    @When("^I click FAQ menu$")
+    public void iClickFAQMenu() {
+        MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
+        FEHome.lnkFAQTop.click();
+    }
+
+    @Then("^Redirect to Motor Front End login page$")
+    public void redirectToMotorFrontEndLoginPage() {
+        MotorFrontEndLoginPage loginPage = new MotorFrontEndLoginPage(base.Driver);
+
+        //Assert
+        Assert.assertTrue(loginPage.txtUserName.isDisplayed());
+        Assert.assertTrue(loginPage.txtPassword.isDisplayed());
+    }
+
+    @Then("^auto redirect to FAQ page$")
+    public void autoRedirectToFAQPage() {
+        String currentAddress;
+        String expectedKeyword ="faq";
+
+        currentAddress = base.Driver.getCurrentUrl().toString();
+
+        System.out.print(currentAddress);
+        //Assert.assertTrue(currentAddress.contains(expectedKeyword));
+
+
     }
 }

@@ -13,7 +13,7 @@ public class MotorFronEndUserProfilePage {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[1]/div[2]/div/div/div/div[2]/div[1]/div[2]/div/p")
+    @FindBy(how = How.XPATH, using = "//p[@class='MyPassword__label']")
     public WebElement btnChangePassword;
 
 }

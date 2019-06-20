@@ -1,25 +1,16 @@
 Feature: new user profile page on Motor Front End
 
-
-  Scenario: Open User Profile page
-    Given Open Motor Front End Home Page Without user login
-    And Open Motor Frontend login page
-    And I enter the following for Motor FE login
+  @Test
+  Scenario: Open user profile page for single.policy user
+    Given Login to Motor FE with below user
       | username                | password |
-      | pisit.ph@easysunday.com | Welcome1 |
-    And I click login button for Motor FE
+      | single.policy@gmail.com | motor9   |
+    When login success I will see "single.policy@gmail.com" as login user name
+    And click on user name
+    And I open user profile page
 
 
-  Scenario: Validate top menu label text for thai on Motor Front End Page
-    Given Open Motor Front End Home Page Without user login
-    And Open Motor Frontend login page
-    And I enter the following for Motor FE login
-      | username                | password |
-      | pisit.ph@easysunday.com | Welcome1 |
-    And I click login button for Motor FE
-    Then validate top thai menu with this data "หน้าหลัก" , "คำถามที่พบบ่อย" , "เคลม" , "ประวัติซันเดย์" ,"บทความ" and "ออกจากระบบ"
-    When I change to english langluage
-    Then validate top english menu with this data "Home" , "FAQ" , "Claims" , "About us" ,"Blog" and "Sign out"
+
 
   #under invertigation
   Scenario: first time login with google user
@@ -39,7 +30,7 @@ Feature: new user profile page on Motor Front End
 
   Scenario: Validate left menu label text for english on Motor Front End Page
     Given Open Motor Front End Home Page Without user login
-    And I click "EN" lable on top menu for switch langluage
+    When I change to english langluage
     #When I click the menu icon for open left menu
 
 
@@ -47,17 +38,7 @@ Feature: new user profile page on Motor Front End
 
 
 
-
-  @Test
-  Scenario: Open user profile page for single.policy user
-    Given Login to Motor FE with below user
-      | username                | password |
-      | single.policy@gmail.com | motor9   |
-    When login success I will see "single.policy@gmail.com" as login user name
-    And click on user name
-
-
-  Scenario: Open user profile page for single.policy user
+  Scenario: Open user profile page for multiple.policy user
     Given Login to Motor FE with below user
       | username                  | password |
       | multiple.policy@gmail.com | motor9   |
@@ -65,7 +46,7 @@ Feature: new user profile page on Motor Front End
     And click on user name
 
 
-  Scenario: Open user profile page for single.policy user
+  Scenario: Open user profile page for cancel.policy user
     Given Login to Motor FE with below user
       | username                | password |
       | cancel.policy@gmail.com | motor9   |

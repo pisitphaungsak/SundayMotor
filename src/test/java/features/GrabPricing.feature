@@ -33,9 +33,9 @@ Feature: Get grab pricing
 
     Examples:
       | carmake | caryear | carmodel | submodel                                     | dashcamera | specifydriver | policytype | mininsured | maxinsured | deductible | premiumbeforediscount | freshclaim |
-      #| Toyota  | 2015    | Prius    | Hatch 4dr Hybrid Standard grade CVT FWD 1.8i | no         | no            | 1          | 100000     | 300000     | 0          | 12500                 | 0          |
-     # | Toyota  | 2015    | Prius    | Hatch 4dr Hybrid Standard grade CVT FWD 1.8i | no         | no            | 1          | 300001     | 500000     | 0          | 13910                 | 0          |
-     # | Toyota  | 2015    | Prius    | Hatch 4dr Hybrid Standard grade CVT FWD 1.8i | no         | no            | 1          | 500001     | 700000     | 0          | 16585                 | 0          |
+      | Toyota  | 2015    | Prius    | Hatch 4dr Hybrid Standard grade CVT FWD 1.8i | no         | no            | 1          | 100000     | 300000     | 0          | 12500                 | 0          |
+      | Toyota  | 2015    | Prius    | Hatch 4dr Hybrid Standard grade CVT FWD 1.8i | no         | no            | 1          | 300001     | 500000     | 0          | 13910                 | 0          |
+      | Toyota  | 2015    | Prius    | Hatch 4dr Hybrid Standard grade CVT FWD 1.8i | no         | no            | 1          | 500001     | 700000     | 0          | 16585                 | 0          |
       | Toyota  | 2015    | Prius    | Hatch 4dr Hybrid Standard grade CVT FWD 1.8i | no         | no            | 52         | 0          | 1000000000 | 0          | 7197                  | 250000     |
       | Toyota  | 2015    | Prius    | Hatch 4dr Hybrid Standard grade CVT FWD 1.8i | no         | no            | 53         | 0          | 1000000000 | 0          | 6741                  | 250000     |
 
