@@ -1,6 +1,13 @@
 import com.test.utils.ReadExcel;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import utilities.OraUtility;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 
 public class TestOIC {
 
@@ -22,4 +29,25 @@ public class TestOIC {
         return null;
     }
 
+    @Test
+    public void oracleconnTest(){
+        OraUtility oratest = new OraUtility();
+
+        Connection conn = oratest.OracleConn();
+
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet rs=stmt.executeQuery("select * from car_make");
+            while(rs.next())
+                System.out.println(rs.getInt("ID")+"  "+rs.getString("MAKER_NAME"));
+
+//step5 close the connection object
+            //conn.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+    }
 }

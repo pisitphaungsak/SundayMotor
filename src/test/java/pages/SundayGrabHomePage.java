@@ -111,7 +111,7 @@ public class SundayGrabHomePage {
         List<WebElement> carmakelist = carMakeList.findElements(By.tagName("li"));
         for (WebElement li : carmakelist) {
 
-            if (li.getText().equals(carMake)) {
+            if (li.getText().toUpperCase().equals(carMake.toUpperCase())) {
                 isFound = true;
                 li.click();
             }
@@ -142,7 +142,7 @@ public class SundayGrabHomePage {
         boolean isFound = false;
         List<WebElement> carmodellist = carModelList.findElements(By.tagName("li"));
         for (WebElement li : carmodellist) {
-            if (li.getText().equals(carmodel)) {
+            if (li.getText().toUpperCase().equals(carmodel.toUpperCase())) {
                 isFound = true;
                 li.click();
             }

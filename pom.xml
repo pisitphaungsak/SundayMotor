@@ -40,26 +40,26 @@
                         <configuration>
                             <projectName>MotorAutomation</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
-                            <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
-                        </configuration>
-                    </execution>
+                            <!-- <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>-->
+                         </configuration>
+                     </execution>
 
 
 
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+                 </executions>
+             </plugin>
+         </plugins>
+     </build>
 
 
-    <dependencies>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>3.141.59</version>
-        </dependency>
+     <dependencies>
+         <dependency>
+             <groupId>org.seleniumhq.selenium</groupId>
+             <artifactId>selenium-java</artifactId>
+             <version>3.141.59</version>
+         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -150,13 +150,21 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.2.5</version>
         </dependency>
+         -->
 
+
+         <!-- https://mvnrepository.com/artifact/com.oracle/ojdbc14-->
+         <dependency>
+             <groupId>com.oracle</groupId>
+             <artifactId>ojdbc14</artifactId>
+             <version>10.2.0.3.0</version>
+         </dependency>
 
     </dependencies>
 
