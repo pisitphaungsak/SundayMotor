@@ -4,6 +4,9 @@ import base.BaseWebUI;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -47,10 +50,21 @@ public class GrabSteps extends BaseWebUI {
     private BaseWebUI base;
 
     @Given("^Open Sunday Grab Home Page$")
-    public void openSundayGrabHomePage() {
+    public void openSundayGrabHomePage() throws InterruptedException {
         base.Driver.navigate().to(base.grabHomePage_test);
         base.Driver.manage().window().maximize();
         base.Driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            Thread.sleep(1000);
+        try{
+            WebElement html =  base.Driver.findElement(By.tagName("html"));
+            for(int i= 0; i < 5 ;i++){
+
+
+                       html.sendKeys(Keys.chord(Keys.COMMAND,Keys.SUBTRACT));
+            }
+        }catch (Exception e){
+            System.out.println("Error Messsage " +e.getMessage());
+        }
 
         motorMake ="";
         yearGroup ="";
@@ -204,9 +218,15 @@ public class GrabSteps extends BaseWebUI {
         actions.perform();
 
         Thread.sleep(2000);
-        do {
+
+
+
+       // do {
+            actions.moveToElement(grabHomePage.deductibleList);
+            actions.perform();
             deductList.selectByIndex(0);
-        } while (deductList.getFirstSelectedOption().getText() == "฿0");
+       // } while ( deductList.getFirstSelectedOption().getText() == "฿0");
+        //} while (deductList.getFirstSelectedOption().getText() == "฿0");
 
 
         deductible = cnvCurrency2Int(deductList.getFirstSelectedOption().getText());
