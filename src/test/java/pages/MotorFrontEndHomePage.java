@@ -13,11 +13,20 @@ public class MotorFrontEndHomePage {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[1]/div[1]/div[1]/div[3]/a[1]")
+    //@FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[1]/div[1]/div[1]/div[3]/a[1]")
+    //public WebElement lblLogin;
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/header/div[1]/div[3]/a[1]")
     public WebElement lblLogin;
+
+
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[1]/div[1]/div[1]/div[3]/div[2]/a")
     public WebElement lblUserName;
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/header/div[1]/div[3]/div[2]/a")
+    public WebElement lblUserNameLogin;
+
 
     //Top Menu
     @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[1]/div[1]/div[1]/div[1]/a[1]")

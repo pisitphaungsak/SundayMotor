@@ -40,8 +40,6 @@ public class GrabSteps extends BaseWebUI {
     private static String packageName;
 
 
-
-
     private static String actualMaxSumInsured;
     private static String expectedMaxSumInsured;
     private static String actualPremiumBeforeDiscount;
@@ -54,30 +52,30 @@ public class GrabSteps extends BaseWebUI {
         base.Driver.navigate().to(base.grabHomePage_test);
         base.Driver.manage().window().maximize();
         base.Driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            Thread.sleep(1000);
-        try{
-            WebElement html =  base.Driver.findElement(By.tagName("html"));
-            for(int i= 0; i < 5 ;i++){
+        Thread.sleep(1000);
+        try {
+            WebElement html = base.Driver.findElement(By.tagName("html"));
+            for (int i = 0; i < 5; i++) {
 
 
-                       html.sendKeys(Keys.chord(Keys.COMMAND,Keys.SUBTRACT));
+                html.sendKeys(Keys.chord(Keys.COMMAND, Keys.SUBTRACT));
             }
-        }catch (Exception e){
-            System.out.println("Error Messsage " +e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Error Messsage " + e.getMessage());
         }
 
-        motorMake ="";
-        yearGroup ="";
-        motorModel ="";
-        motorSubModel ="";
-        isCamaraInstall ="";
-        isDriverSpecific ="";
-        deductible="";
-        grabCarType="";
-        packageName ="";
-        actualMaxSumInsured ="";
-        expectedMaxSumInsured ="";
-        actualPremiumBeforeDiscount ="";
+        motorMake = "";
+        yearGroup = "";
+        motorModel = "";
+        motorSubModel = "";
+        isCamaraInstall = "";
+        isDriverSpecific = "";
+        deductible = "";
+        grabCarType = "";
+        packageName = "";
+        actualMaxSumInsured = "";
+        expectedMaxSumInsured = "";
+        actualPremiumBeforeDiscount = "";
 
     }
 
@@ -149,19 +147,19 @@ public class GrabSteps extends BaseWebUI {
         isCamaraInstall = installed;
         //actions.moveToElement(grabHomePage.btncameraInstalled).click();
         //actions.click();
-        actions.click(grabHomePage.btncameraNotInstalled);
-        actions.perform();
-/*
-        if (installed =="yes") {
+        //actions.click(grabHomePage.btncameraNotInstalled);
+        //actions.perform();
+        isCamaraInstall = installed;
+        if (installed.equals("yes")) {
             System.out.print("Camera installed");
             actions.click(grabHomePage.btncameraInstalled);
-        actions.perform();
-        }else if (installed =="no"){
+            actions.perform();
+        }else if (installed.equals("no")){
             System.out.print("Camera not installed");
             actions.click(grabHomePage.btncameraNotInstalled);
             actions.perform();
         }
-*/
+
         grabHomePage.btnCameraNext.submit();
 
 
@@ -199,8 +197,10 @@ public class GrabSteps extends BaseWebUI {
             packageName = "Type1 " + grabCarType;
             grabHomePage.btnPlanOne.click();
         } else if (inPolicyType == 52) {
+            packageName = "Type2+ " + grabCarType;
             grabHomePage.btnPlanTwoPlus.click();
         } else if (inPolicyType == 53) {
+            packageName = "Type3+ " + grabCarType;
             grabHomePage.btnPlanThreePlus.click();
         }
     }
@@ -209,24 +209,27 @@ public class GrabSteps extends BaseWebUI {
     @Then("^I can find max insured and policy price on the page$")
     public void iCanFindMaxInsuredAndPolicyPriceOnThePage() throws InterruptedException {
         SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
-        Select deductList = new Select(grabHomePage.deductibleList);
+        Thread.sleep(2000);
         Actions actions = new Actions(base.Driver);
         WebDriverWait waiter = new WebDriverWait(base.Driver, 10);
 
+
         waiter.until(ExpectedConditions.elementToBeClickable(grabHomePage.deductibleList));
+        Select deductList = new Select(grabHomePage.deductibleList);
+
+
+
         actions.moveToElement(grabHomePage.deductibleList);
         actions.perform();
 
-        Thread.sleep(2000);
 
 
 
-       // do {
+        do {
             actions.moveToElement(grabHomePage.deductibleList);
             actions.perform();
             deductList.selectByIndex(0);
-       // } while ( deductList.getFirstSelectedOption().getText() == "฿0");
-        //} while (deductList.getFirstSelectedOption().getText() == "฿0");
+        } while (deductList.getFirstSelectedOption().getText() == "฿0");
 
 
         deductible = cnvCurrency2Int(deductList.getFirstSelectedOption().getText());
@@ -375,14 +378,14 @@ public class GrabSteps extends BaseWebUI {
     }
 
     public void recordTest() {
-        int recordCount=0;
+        int recordCount = 0;
 
         try {
             Connection conn = DriverManager.getConnection(url, user, password);
 
             recordCount = isRecordExist();
 
-            if (recordCount == 0){
+            if (recordCount == 0) {
                 PreparedStatement pstmt = conn.prepareStatement("INSERT INTO test_grab_sum_insured (MOTOR_MAKE,\n" +
                         "YEAR_GROUP,   \n" +
                         "MOTOR_MODEL ,  \n" +
@@ -414,7 +417,7 @@ public class GrabSteps extends BaseWebUI {
                 pstmt.setString(14, actualMaxSumInsured);
                 pstmt.execute();
                 conn.commit();
-            }else if (recordCount == 1){
+            } else if (recordCount == 1) {
                 PreparedStatement pstmt = conn.prepareStatement("UPDATE TEST_GRAB_SUM_INSURED\n" +
                         "SET GRAB_CAR_TYPE=? ,\n" +
                         "PKG_NAME=? ,\n" +
@@ -456,9 +459,6 @@ public class GrabSteps extends BaseWebUI {
             }
 
 
-
-
-
             conn.close();
         } catch (SQLException e) {
             System.err.format("SQL State: %s\n%s", e.getSQLState(), e.getMessage());
@@ -466,18 +466,18 @@ public class GrabSteps extends BaseWebUI {
     }
 
     public int isRecordExist() {
-        int recordCount=0;
+        int recordCount = 0;
         try {
             Connection conn = DriverManager.getConnection(url, user, password);
             PreparedStatement pstmt = conn.prepareStatement("SELECT count(*) as cnt from TEST_GRAB_SUM_INSURED\n" +
-                                                        "WHERE  MOTOR_MAKE =?\n" +
-                                                        "AND YEAR_GROUP =?\n" +
-                                                        "AND MOTOR_MODEL =?\n" +
-                                                        "AND MOTOR_SUB_MODEL =?\n" +
-                                                        "AND CAMERA_INSTALLED =?\n" +
-                                                        "AND DRIVER_SPECIFIC =?\n" +
-                                                        "AND POLICY_TYPE =?\n" +
-                                                        "AND DEDUCTIBLE =?");
+                    "WHERE  MOTOR_MAKE =?\n" +
+                    "AND YEAR_GROUP =?\n" +
+                    "AND MOTOR_MODEL =?\n" +
+                    "AND MOTOR_SUB_MODEL =?\n" +
+                    "AND CAMERA_INSTALLED =?\n" +
+                    "AND DRIVER_SPECIFIC =?\n" +
+                    "AND POLICY_TYPE =?\n" +
+                    "AND DEDUCTIBLE =?");
             pstmt.setString(1, motorMake);
             pstmt.setString(2, yearGroup);
             pstmt.setString(3, motorModel);

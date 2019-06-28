@@ -87,8 +87,6 @@ public class SundayGrabHomePage {
     public WebElement btnReduceSumInsure;
 
 
-    //@FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[5]/div[2]/form/div[4]/select")
-
     @FindBy(how = How.XPATH, using = "//select[@class='CustomizationSelect__select']")
     public WebElement deductibleList;
 

@@ -150,3 +150,213 @@ Feature:
       | TOYOTA  | 2019    | VIOS     | Sedan 4dr G CVT 7sp FWD 1.5i               | no         | no            | 1          |
       | TOYOTA  | 2019    | VIOS     | Sedan 4dr J CVT 7sp FWD 1.5i               | no         | no            | 1          |
       | TOYOTA  | 2019    | VIOS     | Sedan 4dr S CVT 7sp FWD 1.5i               | no         | no            | 1          |
+      | TOYOTA  | 2006    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2006    | YARIS    | Hatch 4dr E Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2006    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 52         |
+      | TOYOTA  | 2006    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2006    | YARIS    | Hatch 4dr G Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2006    | YARIS    | Hatch 4dr S Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2006    | YARIS    | Hatch 4dr S Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2007    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2007    | YARIS    | Hatch 4dr E Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2007    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 52         |
+      | TOYOTA  | 2007    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2007    | YARIS    | Hatch 4dr G Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2007    | YARIS    | Hatch 4dr S Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2007    | YARIS    | Hatch 4dr S Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr E Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 52         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr G Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr J Man 5sp FWD 1.5i               | no         | no            | 52         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr S Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr S Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr TRD Sportivo Auto 4sp FWD 1.5i   | no         | no            | 52         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr E Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 52         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr G Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr J Man 5sp FWD 1.5i               | no         | no            | 52         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr S Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr S Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr TRD Sportivo Auto 4sp FWD 1.5i   | no         | no            | 52         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr E Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 52         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr J Man 5sp FWD 1.5i               | no         | no            | 52         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr S Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr S Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr TRD Sportivo Auto 4sp FWD 1.5i   | no         | no            | 52         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr E Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 52         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr J Man 5sp FWD 1.5i               | no         | no            | 52         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr S Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr S Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr TRD Sportivo Auto 4sp FWD 1.5i   | no         | no            | 52         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr E Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 52         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i (Standard)   | no         | no            | 52         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr J Man 5sp FWD 1.5i               | no         | no            | 52         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr J Man 5sp FWD 1.5i (Standard)    | no         | no            | 52         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr RS Auto 4sp FWD 1.5i             | no         | no            | 52         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr S Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr S Limited Auto 4sp FWD 1.5i      | no         | no            | 52         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr TRD Sportivo Auto 4sp FWD 1.5i   | no         | no            | 52         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr E CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 52         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr G CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i              | no         | no            | 52         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i (Standard)   | no         | no            | 52         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 52         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr J Man 5sp FWD 1.5i (Standard)    | no         | no            | 52         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr RS Auto 4sp FWD 1.5i             | no         | no            | 52         |
+      | TOYOTA  | 2014    | YARIS    | Hatch 4dr E CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2014    | YARIS    | Hatch 4dr G CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2014    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2014    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 52         |
+      | TOYOTA  | 2014    | YARIS    | Hatch 4dr TRD Sportivo CVT 4sp FWD 1.2i    | no         | no            | 52         |
+      | TOYOTA  | 2015    | YARIS    | Hatch 4dr E CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2015    | YARIS    | Hatch 4dr G CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2015    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2015    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 52         |
+      | TOYOTA  | 2015    | YARIS    | Hatch 4dr TRD Sportivo CVT 4sp FWD 1.2i    | no         | no            | 52         |
+      | TOYOTA  | 2016    | YARIS    | Hatch 4dr E CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2016    | YARIS    | Hatch 4dr G CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2016    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2016    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 52         |
+      | TOYOTA  | 2016    | YARIS    | Hatch 4dr TRD Sportivo CVT 4sp FWD 1.2i    | no         | no            | 52         |
+      | TOYOTA  | 2017    | YARIS    | Hatch 4dr E CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2017    | YARIS    | Hatch 4dr G CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2017    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2017    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 52         |
+      | TOYOTA  | 2017    | YARIS    | Hatch 4dr TRD Sportivo CVT 4sp FWD 1.2i    | no         | no            | 52         |
+      | TOYOTA  | 2018    | YARIS    | Hatch 4dr E CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2018    | YARIS    | Hatch 4dr G CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2018    | YARIS    | Hatch 4dr G+ CVT 4sp FWD 1.2i              | no         | no            | 52         |
+      | TOYOTA  | 2018    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2018    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 52         |
+      | TOYOTA  | 2019    | YARIS    | Hatch 4dr E CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2019    | YARIS    | Hatch 4dr G CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2019    | YARIS    | Hatch 4dr G+ CVT 4sp FWD 1.2i              | no         | no            | 52         |
+      | TOYOTA  | 2019    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 52         |
+      | TOYOTA  | 2019    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 52         |
+      | TOYOTA  | 2006    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2006    | YARIS    | Hatch 4dr E Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2006    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 53         |
+      | TOYOTA  | 2006    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2006    | YARIS    | Hatch 4dr G Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2006    | YARIS    | Hatch 4dr S Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2006    | YARIS    | Hatch 4dr S Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2007    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2007    | YARIS    | Hatch 4dr E Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2007    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 53         |
+      | TOYOTA  | 2007    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2007    | YARIS    | Hatch 4dr G Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2007    | YARIS    | Hatch 4dr S Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2007    | YARIS    | Hatch 4dr S Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr E Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 53         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr G Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr J Man 5sp FWD 1.5i               | no         | no            | 53         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr S Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr S Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2008    | YARIS    | Hatch 4dr TRD Sportivo Auto 4sp FWD 1.5i   | no         | no            | 53         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr E Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 53         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr G Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr J Man 5sp FWD 1.5i               | no         | no            | 53         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr S Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr S Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2009    | YARIS    | Hatch 4dr TRD Sportivo Auto 4sp FWD 1.5i   | no         | no            | 53         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr E Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 53         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr J Man 5sp FWD 1.5i               | no         | no            | 53         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr S Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr S Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2010    | YARIS    | Hatch 4dr TRD Sportivo Auto 4sp FWD 1.5i   | no         | no            | 53         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr E Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 53         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr J Man 5sp FWD 1.5i               | no         | no            | 53         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr S Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr S Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2011    | YARIS    | Hatch 4dr TRD Sportivo Auto 4sp FWD 1.5i   | no         | no            | 53         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr E Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 53         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i (Standard)   | no         | no            | 53         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr J Man 5sp FWD 1.5i               | no         | no            | 53         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr J Man 5sp FWD 1.5i (Standard)    | no         | no            | 53         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr RS Auto 4sp FWD 1.5i             | no         | no            | 53         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr S Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr S Limited Auto 4sp FWD 1.5i      | no         | no            | 53         |
+      | TOYOTA  | 2012    | YARIS    | Hatch 4dr TRD Sportivo Auto 4sp FWD 1.5i   | no         | no            | 53         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr E Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr E CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr E Man 5sp FWD 1.5i               | no         | no            | 53         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr G Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr G CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i              | no         | no            | 53         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr J Auto 4sp FWD 1.5i (Standard)   | no         | no            | 53         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 53         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr J Man 5sp FWD 1.5i (Standard)    | no         | no            | 53         |
+      | TOYOTA  | 2013    | YARIS    | Hatch 4dr RS Auto 4sp FWD 1.5i             | no         | no            | 53         |
+      | TOYOTA  | 2014    | YARIS    | Hatch 4dr E CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2014    | YARIS    | Hatch 4dr G CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2014    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2014    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 53         |
+      | TOYOTA  | 2014    | YARIS    | Hatch 4dr TRD Sportivo CVT 4sp FWD 1.2i    | no         | no            | 53         |
+      | TOYOTA  | 2015    | YARIS    | Hatch 4dr E CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2015    | YARIS    | Hatch 4dr G CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2015    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2015    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 53         |
+      | TOYOTA  | 2015    | YARIS    | Hatch 4dr TRD Sportivo CVT 4sp FWD 1.2i    | no         | no            | 53         |
+      | TOYOTA  | 2016    | YARIS    | Hatch 4dr E CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2016    | YARIS    | Hatch 4dr G CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2016    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2016    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 53         |
+      | TOYOTA  | 2016    | YARIS    | Hatch 4dr TRD Sportivo CVT 4sp FWD 1.2i    | no         | no            | 53         |
+      | TOYOTA  | 2017    | YARIS    | Hatch 4dr E CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2017    | YARIS    | Hatch 4dr G CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2017    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2017    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 53         |
+      | TOYOTA  | 2017    | YARIS    | Hatch 4dr TRD Sportivo CVT 4sp FWD 1.2i    | no         | no            | 53         |
+      | TOYOTA  | 2018    | YARIS    | Hatch 4dr E CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2018    | YARIS    | Hatch 4dr G CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2018    | YARIS    | Hatch 4dr G+ CVT 4sp FWD 1.2i              | no         | no            | 53         |
+      | TOYOTA  | 2018    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2018    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 53         |
+      | TOYOTA  | 2019    | YARIS    | Hatch 4dr E CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2019    | YARIS    | Hatch 4dr G CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2019    | YARIS    | Hatch 4dr G+ CVT 4sp FWD 1.2i              | no         | no            | 53         |
+      | TOYOTA  | 2019    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 53         |
+      | TOYOTA  | 2019    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 53         |
