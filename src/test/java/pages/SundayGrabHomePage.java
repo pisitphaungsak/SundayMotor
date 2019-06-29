@@ -96,6 +96,10 @@ public class SundayGrabHomePage {
     @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[5]/div[2]/form/div[3]/div/div[2]/div[2]/div[1]/div[2]")
     public WebElement lblSumInsure;
 
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[5]/div[2]/form/div[6]/div/div/div[2]/div[1]/input")
+    public WebElement optRepairGrade;
+
+
 
 
 

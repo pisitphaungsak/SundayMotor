@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.SundayGrabHomePage;
 
 import java.sql.*;
+import java.text.DecimalFormat;
 import java.util.concurrent.TimeUnit;
 
 public class GrabSteps extends BaseWebUI {
@@ -43,6 +44,12 @@ public class GrabSteps extends BaseWebUI {
     private static String actualMaxSumInsured;
     private static String expectedMaxSumInsured;
     private static String actualPremiumBeforeDiscount;
+
+    private static String repairGrade;
+    private static double pricePremiumRate = 1;
+
+    private static final double camDiscountRate = 0.05;
+    private static final double driverDiscountRate = 0.1;
 
 
     private BaseWebUI base;
@@ -76,6 +83,8 @@ public class GrabSteps extends BaseWebUI {
         actualMaxSumInsured = "";
         expectedMaxSumInsured = "";
         actualPremiumBeforeDiscount = "";
+        repairGrade = "";
+        pricePremiumRate = 1;
 
     }
 
@@ -140,21 +149,17 @@ public class GrabSteps extends BaseWebUI {
 
     @Then("^Select camera installed options ([^\"]*)$")
     public void selectCameraInsrtalledOptionsDashcamera(String installed) {
-        WebDriverWait waiter = new WebDriverWait(base.Driver, 5);
         SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
         Actions actions = new Actions(base.Driver);
 
-        isCamaraInstall = installed;
-        //actions.moveToElement(grabHomePage.btncameraInstalled).click();
-        //actions.click();
-        //actions.click(grabHomePage.btncameraNotInstalled);
-        //actions.perform();
+
         isCamaraInstall = installed;
         if (installed.equals("yes")) {
             System.out.print("Camera installed");
+            pricePremiumRate = pricePremiumRate - camDiscountRate;
             actions.click(grabHomePage.btncameraInstalled);
             actions.perform();
-        }else if (installed.equals("no")){
+        } else if (installed.equals("no")) {
             System.out.print("Camera not installed");
             actions.click(grabHomePage.btncameraNotInstalled);
             actions.perform();
@@ -173,13 +178,11 @@ public class GrabSteps extends BaseWebUI {
         waiter.until(ExpectedConditions.elementToBeClickable(grabHomePage.btnNotSpecifyDriver));
         isDriverSpecific = driverSpecific;
 
-        actions.click(grabHomePage.btnNotSpecifyDriver);
-        actions.perform();
-
-        if (driverSpecific == "yes") {
+        if (driverSpecific.equals("yes")) {
+            pricePremiumRate = pricePremiumRate - driverDiscountRate;
             actions.click(grabHomePage.btnSpecifyDriver);
             actions.perform();
-        } else if (driverSpecific == "no") {
+        } else if (driverSpecific.equals("no")) {
             actions.click(grabHomePage.btnNotSpecifyDriver);
             actions.perform();
         }
@@ -205,15 +208,62 @@ public class GrabSteps extends BaseWebUI {
         }
     }
 
+    @And("^Select repair grade ([^\"]*)$")
+    public void selectRepairGradeRepairgrade(String inRepairGrade) throws InterruptedException {
+        SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
+        Thread.sleep(1000);
+        Actions actions = new Actions(base.Driver);
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 10);
+        actions.moveToElement(grabHomePage.optRepairGrade);
+        actions.perform();
+
+        repairGrade = inRepairGrade;
+        if (inRepairGrade.equals("1")) {
+            grabHomePage.optRepairGrade.click();
+        }
+    }
+
+    @And("^Select deductible options ([^\"]*)$")
+    public void selectDeductibleOptionsDeductible(int inDeductible) {
+        SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
+        DecimalFormat myFormatter = new DecimalFormat("฿###,###.###");
+
+        Actions actions = new Actions(base.Driver);
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 10);
+        waiter.until(ExpectedConditions.elementToBeClickable(grabHomePage.deductibleList));
+        Select deductList = new Select(grabHomePage.deductibleList);
+        String defaultDeductible = "";
+
+        String expectedValue = myFormatter.format(inDeductible);
+
+
+        actions.moveToElement(grabHomePage.deductibleList);
+        actions.perform();
+
+        defaultDeductible = cnvCurrencyFormatToNumberString(deductList.getFirstSelectedOption().getText());
+
+        if (defaultDeductible.equals(expectedValue)) {
+            deductible = String.valueOf(inDeductible);
+        } else {
+            do {
+                actions.moveToElement(grabHomePage.deductibleList);
+                actions.perform();
+                deductList.selectByVisibleText(expectedValue);
+            } while (deductList.getFirstSelectedOption().getText() == expectedValue);
+            deductible = cnvCurrencyFormatToNumberString(deductList.getFirstSelectedOption().getText());
+        }
+
+
+    }
 
     @Then("^I can find max insured and policy price on the page$")
-    public void iCanFindMaxInsuredAndPolicyPriceOnThePage() throws InterruptedException {
+    public void iCanFindMaxInsuredAndPolicyPriceOnThePage() {
         SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
-        Thread.sleep(2000);
+        //Thread.sleep(1000);
         Actions actions = new Actions(base.Driver);
         WebDriverWait waiter = new WebDriverWait(base.Driver, 10);
 
-
+        /*
         waiter.until(ExpectedConditions.elementToBeClickable(grabHomePage.deductibleList));
         Select deductList = new Select(grabHomePage.deductibleList);
 
@@ -231,10 +281,10 @@ public class GrabSteps extends BaseWebUI {
             deductList.selectByIndex(0);
         } while (deductList.getFirstSelectedOption().getText() == "฿0");
 
+        */
 
-        deductible = cnvCurrency2Int(deductList.getFirstSelectedOption().getText());
-        actualMaxSumInsured = cnvCurrency2Int(grabHomePage.lblSumInsure.getText());
-        actualPremiumBeforeDiscount = cnvCurrency2Int(grabHomePage.lblPolicyPrice.getText());
+        actualMaxSumInsured = cnvCurrencyFormatToNumberString(grabHomePage.lblSumInsure.getText());
+        actualPremiumBeforeDiscount = cnvCurrencyFormatToNumberString(grabHomePage.lblPolicyPrice.getText());
 
         System.out.println("Deductible = " + deductible);
         System.out.println("Max Suminsure = : " + actualMaxSumInsured);
@@ -254,7 +304,7 @@ public class GrabSteps extends BaseWebUI {
         waiter.until(ExpectedConditions.elementToBeClickable(grabHomePage.deductibleList));
 
         String cnvPolicyPricing;
-        String cnvSumInsure = cnvCurrency2Int(grabHomePage.lblSumInsure.getText());
+        String cnvSumInsure = cnvCurrencyFormatToNumberString(grabHomePage.lblSumInsure.getText());
 
 
         do {
@@ -274,13 +324,13 @@ public class GrabSteps extends BaseWebUI {
                 do {
                     grabHomePage.btnReduceSumInsure.click();
 
-                    cnvSumInsure = cnvCurrency2Int(grabHomePage.lblSumInsure.getText());
+                    cnvSumInsure = cnvCurrencyFormatToNumberString(grabHomePage.lblSumInsure.getText());
                 } while (Integer.parseInt(cnvSumInsure) > maxInsure);
             }
         }
 
 
-        cnvPolicyPricing = cnvCurrency2Int(grabHomePage.lblPolicyPrice.getText());
+        cnvPolicyPricing = cnvCurrencyFormatToNumberString(grabHomePage.lblPolicyPrice.getText());
 
 
         //Assert
@@ -292,7 +342,7 @@ public class GrabSteps extends BaseWebUI {
     }
 
 
-    private String cnvCurrency2Int(String inputStr) {
+    private String cnvCurrencyFormatToNumberString(String inputStr) {
 
         String tmp;
 
@@ -341,17 +391,6 @@ public class GrabSteps extends BaseWebUI {
     }
 
 
-    @And("^I get for max insured for this car ([^\"]*) ,([^\"]*) ,([^\"]*) and ([^\"]*)$")
-    public void iGetForMaxInsuredForThisCarCarmakeCaryearCarmodelAndSubmodel(String inCarMake, int inYear, String inCarModel, String inCarSubModel) {
-
-        //int strMaxInsure = getMaxSumInsure(inCarMake.toUpperCase(), inYear, inCarModel.toUpperCase(), inCarSubModel);
-
-        recordTest();
-
-        // System.out.print("Max : " + strMaxInsure);
-    }
-
-
     public String getMaxSumInsure(String inMotorMake, int inYear, String inMotorModel, String inMotorSubModel) {
         String responseMaxInsured = "";
 
@@ -379,6 +418,18 @@ public class GrabSteps extends BaseWebUI {
 
     public void recordTest() {
         int recordCount = 0;
+        String expectedPremiumBeforeDiscount = getPremiumBeforeDiscount();
+        double expectedPremiumAfterDiscount = 0;
+        String expectedPremium = "";
+
+        if (policyType.equals("1")) {
+            expectedPremiumAfterDiscount = Integer.valueOf(expectedPremiumBeforeDiscount) * pricePremiumRate;
+            expectedPremium = String.valueOf(expectedPremiumAfterDiscount);
+        } else {
+
+            expectedPremium = expectedPremiumBeforeDiscount;
+        }
+
 
         try {
             Connection conn = DriverManager.getConnection(url, user, password);
@@ -399,8 +450,9 @@ public class GrabSteps extends BaseWebUI {
                         "EXPECTED_PREMIUM_BEFORE_DIST,    \n" +
                         "ACTUAL_PREMIUM_BEFORE_DIST,  \n" +
                         "EXPECTED_MAX_SUM_INSURED ,        \n" +
-                        "ACTUAL_MAX_SUM_INSURED )          \n" +
-                        "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,? )");
+                        "ACTUAL_MAX_SUM_INSURED,          \n" +
+                        "REPAIR_GRADE )          \n" +
+                        "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,? )");
                 pstmt.setString(1, motorMake);
                 pstmt.setString(2, yearGroup);
                 pstmt.setString(3, motorModel);
@@ -411,10 +463,11 @@ public class GrabSteps extends BaseWebUI {
                 pstmt.setString(8, grabCarType);
                 pstmt.setString(9, policyType);
                 pstmt.setString(10, packageName);
-                pstmt.setString(11, getPremiumBeforeDiscount());
+                pstmt.setString(11, expectedPremium);
                 pstmt.setString(12, actualPremiumBeforeDiscount);
                 pstmt.setString(13, expectedMaxSumInsured);
                 pstmt.setString(14, actualMaxSumInsured);
+                pstmt.setString(15, repairGrade);
                 pstmt.execute();
                 conn.commit();
             } else if (recordCount == 1) {
@@ -477,6 +530,7 @@ public class GrabSteps extends BaseWebUI {
                     "AND CAMERA_INSTALLED =?\n" +
                     "AND DRIVER_SPECIFIC =?\n" +
                     "AND POLICY_TYPE =?\n" +
+                    "AND REPAIR_GRADE =?\n" +
                     "AND DEDUCTIBLE =?");
             pstmt.setString(1, motorMake);
             pstmt.setString(2, yearGroup);
@@ -485,7 +539,8 @@ public class GrabSteps extends BaseWebUI {
             pstmt.setString(5, isCamaraInstall);
             pstmt.setString(6, isDriverSpecific);
             pstmt.setString(7, policyType);
-            pstmt.setString(8, deductible);
+            pstmt.setString(8, repairGrade);
+            pstmt.setString(9, deductible);
 
 
             ResultSet rs = pstmt.executeQuery();
@@ -514,12 +569,13 @@ public class GrabSteps extends BaseWebUI {
                     "FROM GRAB_PREMIUM \n" +
                     "WHERE  ? BETWEEN MIN_INSURED AND MAX_INSURED \n" +
                     "AND PKG_NAME =  ? \n" +
-                    "AND grade = 2 \n" +
+                    "AND grade = ? \n" +
                     "AND deductible =? \n" +
                     "AND PREMIUM_BEFORE_DISCOUNT >0");
             pstmt.setInt(1, Integer.parseInt(actualMaxSumInsured));
             pstmt.setString(2, packageName);
-            pstmt.setInt(3, Integer.parseInt(deductible));
+            pstmt.setInt(3, Integer.parseInt(repairGrade));
+            pstmt.setInt(4, Integer.parseInt(deductible));
 
 
             ResultSet rs = pstmt.executeQuery();
@@ -553,7 +609,7 @@ public class GrabSteps extends BaseWebUI {
             }
             conn.close();
 
-            System.out.println("Grab Car Type : " + carType);
+            //System.out.println("Grab Car Type : " + carType);
             return carType;
         } catch (SQLException e) {
             System.err.format("SQL State: %s\n%s", e.getSQLState(), e.getMessage());
@@ -561,6 +617,8 @@ public class GrabSteps extends BaseWebUI {
         }
 
     }
+
+
 }
 
 
