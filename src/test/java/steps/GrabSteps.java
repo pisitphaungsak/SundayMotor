@@ -429,7 +429,7 @@ public class GrabSteps extends BaseWebUI {
 
             expectedPremium = expectedPremiumBeforeDiscount;
         }
-
+        // Comment
 
         try {
             Connection conn = DriverManager.getConnection(url, user, password);
