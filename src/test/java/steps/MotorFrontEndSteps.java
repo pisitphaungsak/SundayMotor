@@ -259,4 +259,16 @@ public class MotorFrontEndSteps extends BaseWebUI {
 
         Thread.sleep(5000);
     }
+
+    @And("^Open Motor FE policy detail page for policy bundle id \"([^\"]*)\"$")
+    public void openMotorFEPolicyDetailPageForPolicyBundleId(String arg0) throws InterruptedException {
+        String tagetURL ="https://motor-fe-mot229.easysunday.com/th/policy/" +arg0 ;
+        Thread.sleep(2000);
+        base.Driver.navigate().to(tagetURL);
+
+
+
+
+
+    }
 }

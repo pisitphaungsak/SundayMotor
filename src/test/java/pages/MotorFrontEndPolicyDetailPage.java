@@ -102,4 +102,10 @@ public class MotorFrontEndPolicyDetailPage {
     @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/main/div/div[2]/div/div/div[12]/div[3]/div[2]")
     public WebElement b_lblMedicalPaymentTo3rdPartyValueTotal;
 
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/main/div/div[2]/div/div/div[15]/div[2]")
+    public WebElement c_lblshowCPTDetailtoggle;
+
+
+
 }

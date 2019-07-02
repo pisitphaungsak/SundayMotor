@@ -257,31 +257,11 @@ public class GrabSteps extends BaseWebUI {
     }
 
     @Then("^I can find max insured and policy price on the page$")
-    public void iCanFindMaxInsuredAndPolicyPriceOnThePage() {
+    public void iCanFindMaxInsuredAndPolicyPriceOnThePage()  {
         SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
         //Thread.sleep(1000);
         Actions actions = new Actions(base.Driver);
         WebDriverWait waiter = new WebDriverWait(base.Driver, 10);
-
-        /*
-        waiter.until(ExpectedConditions.elementToBeClickable(grabHomePage.deductibleList));
-        Select deductList = new Select(grabHomePage.deductibleList);
-
-
-
-        actions.moveToElement(grabHomePage.deductibleList);
-        actions.perform();
-
-
-
-
-        do {
-            actions.moveToElement(grabHomePage.deductibleList);
-            actions.perform();
-            deductList.selectByIndex(0);
-        } while (deductList.getFirstSelectedOption().getText() == "฿0");
-
-        */
 
         actualMaxSumInsured = cnvCurrencyFormatToNumberString(grabHomePage.lblSumInsure.getText());
         actualPremiumBeforeDiscount = cnvCurrencyFormatToNumberString(grabHomePage.lblPolicyPrice.getText());
@@ -291,6 +271,8 @@ public class GrabSteps extends BaseWebUI {
         System.out.println("Premium : " + actualPremiumBeforeDiscount);
 
         recordTest();
+
+
 
     }
 
@@ -424,7 +406,7 @@ public class GrabSteps extends BaseWebUI {
 
         if (policyType.equals("1")) {
             expectedPremiumAfterDiscount = Integer.valueOf(expectedPremiumBeforeDiscount) * pricePremiumRate;
-            expectedPremium = String.valueOf(expectedPremiumAfterDiscount);
+            expectedPremium = String.valueOf(Math.round(expectedPremiumAfterDiscount));
         } else {
 
             expectedPremium = expectedPremiumBeforeDiscount;

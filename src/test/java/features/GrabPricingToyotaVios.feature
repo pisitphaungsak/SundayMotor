@@ -11,12 +11,15 @@ Feature:
     And Select camera installed options <dashcamera>
     And Select specify driver ? <specifydriver>
     When Open policy plan customize page <policytype>
+    And Select repair grade <repairgrade>
+    And Select deductible options <deductible>
+
     Then I can find max insured and policy price on the page
-    And I am back to selece
+   # Repair Grade 1 = DealerOrGarage , 2 = Garage only
 
 
     Examples:
-      | carmake | caryear | carmodel | submodel                                   | dashcamera | specifydriver | policytype |
+      | carmake | caryear | carmodel | submodel                                   | dashcamera | specifydriver | policytype | repairgrade | deductible |
       | TOYOTA  | 2005    | VIOS     | Sedan 4dr E Auto 4sp FWD 1.5i              | no         | no            | 1          |
       | TOYOTA  | 2005    | VIOS     | Sedan 4dr E Auto 4sp FWD 1.5i (ABS,SRS)    | no         | no            | 1          |
       | TOYOTA  | 2005    | VIOS     | Sedan 4dr E Auto 4sp FWD 1.5i (ABS,SRS,IV) | no         | no            | 1          |
@@ -360,3 +363,22 @@ Feature:
       | TOYOTA  | 2019    | YARIS    | Hatch 4dr G+ CVT 4sp FWD 1.2i              | no         | no            | 53         |
       | TOYOTA  | 2019    | YARIS    | Hatch 4dr J CVT 4sp FWD 1.2i               | no         | no            | 53         |
       | TOYOTA  | 2019    | YARIS    | Hatch 4dr J ECO CVT 4sp FWD 1.2i           | no         | no            | 53         |
+      | TOYOTA  | 2005    | VIOS          | Sedan 4dr E Auto 4sp FWD 1.5i                           | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2005    | VIOS          | Sedan 4dr E Auto 4sp FWD 1.5i (ABS,SRS)                 | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2005    | VIOS          | Sedan 4dr E Auto 4sp FWD 1.5i (ABS,SRS,IV)              | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2005    | VIOS          | Sedan 4dr E Auto 4sp FWD 1.5i (IV)                      | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2005    | VIOS          | Sedan 4dr E Man 5sp FWD 1.5i                            | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2005    | VIOS          | Sedan 4dr J Auto 4sp FWD 1.5i                           | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2005    | VIOS          | Sedan 4dr J Man 5sp FWD 1.5i                            | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2005    | VIOS          | Sedan 4dr S Auto 4sp FWD 1.5i                           | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2005    | VIOS          | Sedan 4dr S Auto 4sp FWD 1.5i (IV)                      | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2005    | VIOS          | Sedan 4dr S Sporty Auto 4sp FWD 1.5i                    | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2005    | VIOS          | Sedan 4dr Turbo Man 5sp FWD 1.5iTi                      | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2006    | VIOS          | Sedan 4dr E Auto 4sp FWD 1.5i                           | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2006    | VIOS          | Sedan 4dr E Auto 4sp FWD 1.5i (ABS,SRS,IV)              | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2006    | VIOS          | Sedan 4dr E Man 5sp FWD 1.5i                            | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2006    | VIOS          | Sedan 4dr J Auto 4sp FWD 1.5i                           | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2006    | VIOS          | Sedan 4dr J Man 5sp FWD 1.5i                            | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2006    | VIOS          | Sedan 4dr S Auto 4sp FWD 1.5i                           | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2006    | VIOS          | Sedan 4dr S Auto 4sp FWD 1.5i (IV)                      | no         | no            | 52         | 2           | 2000       |
+      | TOYOTA  | 2006    | VIOS          | Sedan 4dr S Sporty Auto 4sp FWD 1.5i                    | no         | no            | 52         | 2           | 2000       |
