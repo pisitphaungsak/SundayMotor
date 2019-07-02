@@ -13,7 +13,7 @@ public class BaseWebUI {
 
     public String adnminBaseURL = "https://admin-staging-02.easysunday.com/";
 
-    public String motorBaseURL = "https://motor-fe-mot213.easysunday.com/";
+    public String motorBaseURL = "https://motor-fe-mot229.easysunday.com/";
 
 
     public String testUserName = "pisit.ph@easysunday.com";

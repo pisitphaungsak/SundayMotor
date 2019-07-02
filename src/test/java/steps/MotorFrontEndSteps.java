@@ -8,6 +8,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,6 +16,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pages.MotorFrontEndLoginPage;
 import pages.MotorFrontEndHomePage;
+import pages.MotorFrontEndPolicyDetailPage;
+import pages.MotorFrontEndUserProfilePage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,14 +33,12 @@ public class MotorFrontEndSteps extends BaseWebUI {
         this.base = base;
 
     }
-
-
     @Given("^Open Motor Front End Home Page Without user login$")
-    public void openMotorFrontEndHomePage() {
-        MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
+    public void openMotorFrontEndHomePage()  {
         base.Driver.navigate().to(base.motorBaseURL);
         base.Driver.manage().window().maximize();
         base.Driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+
     }
 
     @And("^I enter the following for Motor FE login$")
@@ -234,6 +235,39 @@ public class MotorFrontEndSteps extends BaseWebUI {
 
         System.out.print(currentAddress);
         //Assert.assertTrue(currentAddress.contains(expectedKeyword));
+
+
+    }
+
+    @And("^I open Motor FE user profile page$")
+    public void iOpenMotorFEUserProfilePage() {
+        MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
+        FEHome.lblUserNameLogin.click();
+
+    }
+
+    @And("^I open first policy$")
+    public void iOpenFirstPolicy() throws InterruptedException {
+        MotorFrontEndUserProfilePage FEProfile  = new MotorFrontEndUserProfilePage(base.Driver);
+
+        MotorFrontEndPolicyDetailPage FEProfileDetail = new MotorFrontEndPolicyDetailPage(base.Driver);
+
+        FEProfile.btnFirstPolicy.click();
+
+
+        System.out.println(FEProfileDetail.h_lblCarDetail.getText());
+
+        Thread.sleep(5000);
+    }
+
+    @And("^Open Motor FE policy detail page for policy bundle id \"([^\"]*)\"$")
+    public void openMotorFEPolicyDetailPageForPolicyBundleId(String arg0) throws InterruptedException {
+        String tagetURL ="https://motor-fe-mot229.easysunday.com/th/policy/" +arg0 ;
+        Thread.sleep(2000);
+        base.Driver.navigate().to(tagetURL);
+
+
+
 
 
     }

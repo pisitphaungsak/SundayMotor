@@ -18,7 +18,7 @@ public class MotorFrontEndLoginPage {
     @FindBy(how = How.XPATH, using = "//*[@id=\"normal_login_password\"]")
     public WebElement txtPassword;
 
-    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[1]/div[2]/div/section/div/form/div[3]/div/div/span/button")
+    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/section/main/div/section/div/form/div[3]/div/div/span/button")
     public WebElement btnLogin;
 
     @FindBy(how = How.XPATH,using = "//div[@class='Login__error']")
