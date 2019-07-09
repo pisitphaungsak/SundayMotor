@@ -19,5 +19,9 @@ public class MotorFrontEndUserProfilePage {
     @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/main/div/section/div/div/div[2]/div[2]/div/div/div/a/div")
     public WebElement btnFirstPolicy;
 
+    @FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/b[1]/i[1]/*")
+    public WebElement btnEditUserProfile;
+
+
 
 }

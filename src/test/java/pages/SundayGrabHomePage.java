@@ -68,6 +68,16 @@ public class SundayGrabHomePage {
     @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/div[1]/div/form/div/div[2]/button[2]")
     public WebElement btnSpecifyDriver;
 
+    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/div[1]/div/form/div/div[3]/div[1]/div[1]/input")
+    public WebElement txtDriverFirstName;
+
+    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/div[1]/div/form/div/div[3]/div[1]/div[2]/input")
+    public WebElement txtDriverLastName;
+
+    @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/div[5]/div[2]/div[1]/div/form/div/div[3]/div[1]/div[3]/input")
+    public WebElement txtDriverDOB;
+
+
     @FindBy(how = How.XPATH,using = "//button[@class='BasicInfoSpecifyDriver__nextButton']")
     public WebElement btnSpecifyDriverNext;
 

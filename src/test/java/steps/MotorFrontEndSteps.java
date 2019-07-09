@@ -267,8 +267,23 @@ public class MotorFrontEndSteps extends BaseWebUI {
         base.Driver.navigate().to(tagetURL);
 
 
+        Thread.sleep(5000);
 
 
+    }
+
+    @When("^I click edit Motor FE user profile icon$")
+    public void iClickEditMotorFEUserProfileIcon() throws InterruptedException {
+        MotorFrontEndUserProfilePage FEProfile  = new MotorFrontEndUserProfilePage(base.Driver);
+        WebDriverWait waiter = new WebDriverWait(base.Driver, 10);
+        Actions actions = new Actions(base.Driver);
+        waiter.until(ExpectedConditions.elementToBeClickable(FEProfile.btnEditUserProfile));
+        actions.moveToElement(FEProfile.btnEditUserProfile).click();
+        //actions.moveToElement(FEProfile.btnEditUserProfile,570,280).click();
+                actions.perform();
+        //FEProfile.btnEditUserProfile.click();
+
+        Thread.sleep(2000);
 
     }
 }

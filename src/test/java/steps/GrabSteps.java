@@ -182,6 +182,9 @@ public class GrabSteps extends BaseWebUI {
             pricePremiumRate = pricePremiumRate - driverDiscountRate;
             actions.click(grabHomePage.btnSpecifyDriver);
             actions.perform();
+            grabHomePage.txtDriverFirstName.sendKeys("Motor");
+            grabHomePage.txtDriverLastName.sendKeys("Tester");
+            grabHomePage.txtDriverDOB.sendKeys("14021980");
         } else if (driverSpecific.equals("no")) {
             actions.click(grabHomePage.btnNotSpecifyDriver);
             actions.perform();
@@ -257,7 +260,7 @@ public class GrabSteps extends BaseWebUI {
     }
 
     @Then("^I can find max insured and policy price on the page$")
-    public void iCanFindMaxInsuredAndPolicyPriceOnThePage()  {
+    public void iCanFindMaxInsuredAndPolicyPriceOnThePage() throws InterruptedException {
         SundayGrabHomePage grabHomePage = new SundayGrabHomePage(base.Driver);
         //Thread.sleep(1000);
         Actions actions = new Actions(base.Driver);
@@ -270,8 +273,8 @@ public class GrabSteps extends BaseWebUI {
         System.out.println("Max Suminsure = : " + actualMaxSumInsured);
         System.out.println("Premium : " + actualPremiumBeforeDiscount);
 
-        recordTest();
-
+       // recordTest();
+        //Thread.sleep(10000);
 
 
     }
@@ -401,11 +404,23 @@ public class GrabSteps extends BaseWebUI {
     public void recordTest() {
         int recordCount = 0;
         String expectedPremiumBeforeDiscount = getPremiumBeforeDiscount();
+
+        double calcPrice = Integer.valueOf(expectedPremiumBeforeDiscount);
         double expectedPremiumAfterDiscount = 0;
         String expectedPremium = "";
 
         if (policyType.equals("1")) {
-            expectedPremiumAfterDiscount = Integer.valueOf(expectedPremiumBeforeDiscount) * pricePremiumRate;
+
+            if (isCamaraInstall.equals("yes")) {
+                calcPrice = calcPrice - (calcPrice *  camDiscountRate);
+            }
+
+            if (isDriverSpecific.equals("yes")) {
+                calcPrice = calcPrice - (calcPrice * driverDiscountRate);
+            }
+
+            expectedPremiumAfterDiscount = calcPrice;
+
             expectedPremium = String.valueOf(Math.round(expectedPremiumAfterDiscount));
         } else {
 

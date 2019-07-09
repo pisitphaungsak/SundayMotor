@@ -18,173 +18,20 @@ Feature:
     Then I can find max insured and policy price on the page
    # Repair Grade 1 = DealerOrGarage , 2 = Garage only
     Examples:
-      | carmake | caryear | carmodel      | submodel                                                | dashcamera | specifydriver | policytype | repairgrade | deductible |
-      #| TOYOTA  | 2005    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2005    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i (ABS,AB)            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2005    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i (ABS,AB,LTD)        | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2005    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.8i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2005    | COROLLA ALTIS | Sedan 4dr Altis E Man 5sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2005    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.8i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2005    | COROLLA ALTIS | Sedan 4dr Altis J Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2005    | COROLLA ALTIS | Sedan 4dr Altis J Man 5sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2006    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2006    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i (ABS,AB)            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2006    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i (ABS,AB,LTD)        | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2006    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.8i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2006    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.8i (LST)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2006    | COROLLA ALTIS | Sedan 4dr Altis E Man 5sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2006    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2006    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.8i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2006    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.8i (DVD,LST)           | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2006    | COROLLA ALTIS | Sedan 4dr Altis G Edition Auto 4sp FWD 1.6i             | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2006    | COROLLA ALTIS | Sedan 4dr Altis G Limited Auto 4sp FWD 1.8i             | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2006    | COROLLA ALTIS | Sedan 4dr Altis J Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2006    | COROLLA ALTIS | Sedan 4dr Altis J Man 5sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2007    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2007    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.8i (LST)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2007    | COROLLA ALTIS | Sedan 4dr Altis E Limited Auto 4sp FWD 1.6i             | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2007    | COROLLA ALTIS | Sedan 4dr Altis E Limited Auto 4sp FWD 1.8i             | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2007    | COROLLA ALTIS | Sedan 4dr Altis E Man 5sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2007    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2007    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.8i (DVD,LST)           | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2007    | COROLLA ALTIS | Sedan 4dr Altis G Edition Auto 4sp FWD 1.6i             | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2007    | COROLLA ALTIS | Sedan 4dr Altis G Limited Auto 4sp FWD 1.6i             | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2007    | COROLLA ALTIS | Sedan 4dr Altis J Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2007    | COROLLA ALTIS | Sedan 4dr Altis J Man 5sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2008    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2008    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.8i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2008    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.8i (LST)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2008    | COROLLA ALTIS | Sedan 4dr Altis E Limited Auto 4sp FWD 1.6i             | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2008    | COROLLA ALTIS | Sedan 4dr Altis E Limited Auto 4sp FWD 1.8i             | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2008    | COROLLA ALTIS | Sedan 4dr Altis E Man 5sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2008    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2008    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.8i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2008    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.8i (DVD,LST)           | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2008    | COROLLA ALTIS | Sedan 4dr Altis G Limited Auto 4sp FWD 1.6i             | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2008    | COROLLA ALTIS | Sedan 4dr Altis J Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2008    | COROLLA ALTIS | Sedan 4dr Altis J Man 5sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis CNG Man 5sp FWD 1.6i                    | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i (CNG)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.8i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.8i (MY09 spec.)        | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis E Man 5sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.8i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.8i (MY09 spec.)        | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 2.0i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis J Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis J Man 5sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis SS-I Auto 4sp FWD 1.6i                  | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis V Auto 4sp FWD 2.0i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | COROLLA ALTIS | Sedan 4dr Altis V Auto 4sp FWD 2.0i (Navi)              | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis CNG Man 5sp FWD 1.6i                    | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis CNG Man 6sp FWD 1.6i                    | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis CNG Man 6sp FWD 1.6i (Black Bumper)     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i (CNG)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.8i (MY09 spec.)        | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis E CVT 7sp FWD 1.8i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.8i (MY09 spec.)        | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 2.0i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis G CVT 7sp FWD 1.8i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis G CVT 7sp FWD 2.0i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis J Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis J Man 5sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis J Man 6sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis V Auto 4sp FWD 2.0i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis V Auto 4sp FWD 2.0i (Navi)              | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis V CVT 7sp FWD 2.0i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr Altis V CVT 7sp FWD 2.0i (Navi)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr TRD Sportivo Auto 4sp FWD 1.6i                | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | COROLLA ALTIS | Sedan 4dr TRD Sportivo Auto 4sp FWD 1.8i                | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | COROLLA ALTIS | Sedan 4dr Altis CNG Man 6sp FWD 1.6i                    | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | COROLLA ALTIS | Sedan 4dr Altis CNG Man 6sp FWD 1.6i (Black Bumper)     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i (CNG)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | COROLLA ALTIS | Sedan 4dr Altis E CVT 7sp FWD 1.8i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | COROLLA ALTIS | Sedan 4dr Altis G CVT 7sp FWD 1.8i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | COROLLA ALTIS | Sedan 4dr Altis G CVT 7sp FWD 2.0i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | COROLLA ALTIS | Sedan 4dr Altis J Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | COROLLA ALTIS | Sedan 4dr Altis J Man 6sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | COROLLA ALTIS | Sedan 4dr Altis V CVT 7sp FWD 2.0i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | COROLLA ALTIS | Sedan 4dr Altis V CVT 7sp FWD 2.0i (Navi)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | COROLLA ALTIS | Sedan 4dr TRD Sportivo Auto 4sp FWD 1.8i                | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | COROLLA ALTIS | Sedan 4dr Altis CNG Man 6sp FWD 1.6i                    | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i (CNG)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | COROLLA ALTIS | Sedan 4dr Altis E CVT 7sp FWD 1.8i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | COROLLA ALTIS | Sedan 4dr Altis E CVT 7sp FWD 1.8i (50th)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | COROLLA ALTIS | Sedan 4dr Altis G CVT 7sp FWD 1.8i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | COROLLA ALTIS | Sedan 4dr Altis G CVT 7sp FWD 1.8i (Navi)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | COROLLA ALTIS | Sedan 4dr Altis G CVT 7sp FWD 2.0i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | COROLLA ALTIS | Sedan 4dr Altis J Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | COROLLA ALTIS | Sedan 4dr Altis J Man 6sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | COROLLA ALTIS | Sedan 4dr Altis V CVT 7sp FWD 2.0i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | COROLLA ALTIS | Sedan 4dr Altis V CVT 7sp FWD 2.0i (Navi)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | COROLLA ALTIS | Sedan 4dr TRD Sportivo Auto 4sp FWD 1.8i                | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2013    | COROLLA ALTIS | Sedan 4dr Altis CNG Man 6sp FWD 1.6i                    | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2013    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i (CNG)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2013    | COROLLA ALTIS | Sedan 4dr Altis E CVT 7sp FWD 1.8i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2013    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2013    | COROLLA ALTIS | Sedan 4dr Altis G CVT 7sp FWD 1.8i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2013    | COROLLA ALTIS | Sedan 4dr Altis G CVT 7sp FWD 1.8i (Navi)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2013    | COROLLA ALTIS | Sedan 4dr Altis G CVT 7sp FWD 2.0i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2013    | COROLLA ALTIS | Sedan 4dr Altis J Man 6sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2013    | COROLLA ALTIS | Sedan 4dr Altis V CVT 7sp FWD 2.0i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2013    | COROLLA ALTIS | Sedan 4dr Altis V CVT 7sp FWD 2.0i (Navi)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2013    | COROLLA ALTIS | Sedan 4dr TRD Sportivo CVT 7sp FWD 1.8i                 | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr Altis E Auto 4sp FWD 1.6i (CNG)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr Altis E CVT 7sp FWD 1.6i (CNG)                | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr Altis E CVT 7sp FWD 1.8i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr Altis G Auto 4sp FWD 1.6i                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr Altis G CVT 7sp FWD 1.8i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr Altis G CVT 7sp FWD 1.8i (Navi)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr Altis G CVT 7sp FWD 2.0i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr Altis J Man 6sp FWD 1.6i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr Altis J Man 6sp FWD 1.6i (CNG)                | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr Altis V CVT 7sp FWD 2.0i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr Altis V CVT 7sp FWD 2.0i (Navi)               | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr G CVT 7sp FWD 1.6i                            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr S CVT 7sp FWD 1.8i (ESport)                   | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr TRD Sportivo CVT 7sp FWD 1.8i                 | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2014    | COROLLA ALTIS | Sedan 4dr V CVT 7sp FWD 1.8i (Navi)                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2015    | COROLLA ALTIS | Sedan 4dr Altis E CVT 7sp FWD 1.6i (CNG)                | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2015    | COROLLA ALTIS | Sedan 4dr Altis E CVT 7sp FWD 1.8i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2015    | COROLLA ALTIS | Sedan 4dr Altis G CVT 7sp FWD 1.8i                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2015    | COROLLA ALTIS | Sedan 4dr ESPORT CVT 7sp FWD 1.8i (Nurburgring Edition) | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2015    | COROLLA ALTIS | Sedan 4dr G CVT 7sp FWD 1.6i                            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2015    | COROLLA ALTIS | Sedan 4dr S CVT 7sp FWD 1.8i (ESport)                   | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2015    | COROLLA ALTIS | Sedan 4dr V CVT 7sp FWD 1.8i (Navi)                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2016    | COROLLA ALTIS | Sedan 4dr E CVT 7sp FWD 1.6i (CNG)                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2016    | COROLLA ALTIS | Sedan 4dr E CVT 7sp FWD 1.8i                            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2016    | COROLLA ALTIS | Sedan 4dr ESPORT CVT 7sp FWD 1.8i                       | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2016    | COROLLA ALTIS | Sedan 4dr ESPORT CVT 7sp FWD 1.8i (Nurburgring Edition) | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2016    | COROLLA ALTIS | Sedan 4dr ESPORT CVT 7sp FWD 1.8i (Option)              | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2016    | COROLLA ALTIS | Sedan 4dr G CVT 7sp FWD 1.6i                            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2016    | COROLLA ALTIS | Sedan 4dr G CVT 7sp FWD 1.8i                            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2016    | COROLLA ALTIS | Sedan 4dr J Man 6sp FWD 1.6i                            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2016    | COROLLA ALTIS | Sedan 4dr J Man 7sp FWD 1.6i                            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2016    | COROLLA ALTIS | Sedan 4dr S CVT 7sp FWD 1.8i (ESport)                   | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2016    | COROLLA ALTIS | Sedan 4dr V CVT 7sp FWD 1.8i (Navi)                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2017    | COROLLA ALTIS | Sedan 4dr E CVT 7sp FWD 1.6i (CNG)                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2017    | COROLLA ALTIS | Sedan 4dr E CVT 7sp FWD 1.8i                            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2017    | COROLLA ALTIS | Sedan 4dr ESPORT CVT 7sp FWD 1.8i                       | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2017    | COROLLA ALTIS | Sedan 4dr ESPORT CVT 7sp FWD 1.8i (Option)              | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2017    | COROLLA ALTIS | Sedan 4dr G CVT 7sp FWD 1.6i                            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2017    | COROLLA ALTIS | Sedan 4dr J Man 6sp FWD 1.6i                            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2017    | COROLLA ALTIS | Sedan 4dr V CVT 7sp FWD 1.8i (Navi)                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2018    | COROLLA ALTIS | Sedan 4dr E CVT 7sp FWD 1.6i (CNG)                      | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2018    | COROLLA ALTIS | Sedan 4dr E CVT 7sp FWD 1.8i                            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2018    | COROLLA ALTIS | Sedan 4dr ESPORT CVT 7sp FWD 1.8i                       | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2018    | COROLLA ALTIS | Sedan 4dr ESPORT CVT 7sp FWD 1.8i (Option)              | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2018    | COROLLA ALTIS | Sedan 4dr G CVT 7sp FWD 1.6i                            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2018    | COROLLA ALTIS | Sedan 4dr J Man 6sp FWD 1.6i                            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2018    | COROLLA ALTIS | Sedan 4dr S CVT 7sp FWD 1.8i                            | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2018    | COROLLA ALTIS | Sedan 4dr V CVT 7sp FWD 1.8i (Navi)                     | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2018    | COROLLA ALTIS | Sedan 4dr V CVT 7sp FWD 1.8i (Navi, Telematics)         | yes        | no            | 1          | 2           | 0          |
+      | carmake | caryear | carmodel | submodel                                   | dashcamera | specifydriver | policytype | repairgrade | deductible |
+      | TOYOTA  | 2007    | FORTUNER | Wagon 4dr V 7st Auto 4sp RWD 2.7i                          | no         | no            | 1          | 2           | 0          |
+      | TOYOTA  | 2007    | FORTUNER | Wagon 4dr V Exclusive 7st Auto 4sp 4WD 2.7i                | no         | no            | 1          | 2           | 0          |
+      | TOYOTA  | 2009    | FORTUNER | Wagon 4dr V 7st Auto 4sp RWD 3.0DCT                        | no         | no            | 1          | 2           | 0          |
+      | TOYOTA  | 2016    | FORTUNER | Wagon 4dr TRD Sportivo 7st Auto 6sp RWD 2.8DCT (Black Top) | no         | no            | 1          | 2           | 0          |
+      | TOYOTA  | 2017    | FORTUNER | Wagon 4dr G 7st Man 6sp RWD 2.4DCT                         | no         | no            | 1          | 2           | 0          |
+      | TOYOTA  | 2007    | FORTUNER | Wagon 4dr V 7st Auto 4sp 4WD 2.7i                          | yes        | no            | 1          | 2           | 0          |
+      | TOYOTA  | 2007    | FORTUNER | Wagon 4dr V Smart 7st Auto 4sp 4WD 3.0DCT                  | yes        | no            | 1          | 2           | 0          |
+      | TOYOTA  | 2010    | FORTUNER | Wagon 4dr V 7st Auto 4sp RWD 3.0DCT                        | yes        | no            | 1          | 2           | 0          |
+      | TOYOTA  | 2011    | FORTUNER | Wagon 4dr G 7st Man 5sp RWD 2.5DCT                         | yes        | no            | 1          | 2           | 0          |
+      | TOYOTA  | 2018    | FORTUNER | Wagon 4dr TRD Sportivo 7st Auto 6sp 4WD 2.8DCT             | yes        | no            | 1          | 2           | 0          |
+      | TOYOTA  | 2012    | FORTUNER | Wagon 4dr V 7st Auto 4sp RWD 3.0DCT                        | no         | yes           | 1          | 2           | 0          |
+      | TOYOTA  | 2011    | FORTUNER | Wagon 4dr V 7st Auto 4sp RWD 2.7i                          | yes        | yes           | 1          | 2           | 0          |
+      | TOYOTA  | 2018    | FORTUNER | Wagon 4dr V 7st Auto 6sp RWD 2.4DCT                        | yes        | yes           | 1          | 2           | 0          |
+      | TOYOTA  | 2018    | FORTUNER | Wagon 4dr V 7st Auto 6sp RWD 2.7i                          | yes        | yes           | 1          | 2           | 0          |
 
 

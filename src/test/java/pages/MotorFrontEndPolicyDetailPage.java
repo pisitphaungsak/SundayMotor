@@ -38,6 +38,10 @@ public class MotorFrontEndPolicyDetailPage {
     @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/main/div/div[1]/div/div/div[10]")
     public WebElement h_lblPolicyHolderValue;
 
+    // Document expand button
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/main/div/div[2]/div/div/div[1]")
+    public WebElement h_btnMotorDocumentSection;
+
     // Policy Body
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/main/div/div[2]/div/div/div[1]/div")

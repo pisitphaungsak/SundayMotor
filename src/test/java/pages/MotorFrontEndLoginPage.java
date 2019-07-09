@@ -21,6 +21,7 @@ public class MotorFrontEndLoginPage {
     @FindBy(how = How.XPATH,using = "//*[@id=\"root\"]/div/section/main/div/section/div/form/div[3]/div/div/span/button")
     public WebElement btnLogin;
 
+
     @FindBy(how = How.XPATH,using = "//div[@class='Login__error']")
     public WebElement lblErrorMsg;
 

@@ -24,7 +24,7 @@ public class MotorFrontEndHomePage {
     @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[1]/div[1]/div[1]/div[3]/div[2]/a")
     public WebElement lblUserName;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/header/div[1]/div[3]/div[2]/a")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/div[1]/div[1]/div[1]/div[3]/div[2]/a")
     public WebElement lblUserNameLogin;
 
 

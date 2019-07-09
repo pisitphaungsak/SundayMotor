@@ -58,7 +58,7 @@ public class OICvalidateCarCodeOptions extends BaseOIC {
     }
 
     @DataProvider(name = "carCodeInvalidData")
-    public Object[][] carCodeInalidData() {
+    public Object[][] carCodeInvalidData() {
         return new Object[][]{
                 {59638.59, "v1", "120", 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0},
                 {59638.59, "v1", "210", 1995, 0, 3, 2600000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0},
