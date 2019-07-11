@@ -30,14 +30,14 @@ public class Hook extends BaseWebUI {
     @Before
     public void InitializeTest() throws MalformedURLException {
         //Arrange
-        base.Driver = new ChromeDriver();
-/*
+     //   base.Driver = new ChromeDriver();
+
         ChromeOptions cap = new ChromeOptions();
         cap.setCapability("version","");
         cap.setCapability("platform","LINUX");
 
         base.Driver = new RemoteWebDriver(new URL("http://localhost:4446/wd/hub"), cap);
-*/
+
 
     }
 

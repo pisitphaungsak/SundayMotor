@@ -147,7 +147,19 @@ public class BaseOIC {
     }
 
     public boolean compareNumber(float actualNumber, double expectedNumber) {
-        if ((actualNumber == expectedNumber) || (actualNumber - expectedNumber <= 0.5) || (expectedNumber - actualNumber <= 0.5)) {
+
+        double diffValue =0;
+        double calActualNumber = actualNumber;
+
+
+        if (calActualNumber == expectedNumber) {
+            return true;
+        } else if(calActualNumber > expectedNumber){
+            diffValue = calActualNumber - expectedNumber;
+        } else if (calActualNumber < expectedNumber)
+            diffValue =  expectedNumber - calActualNumber;
+
+        if (diffValue < 2) {
             return true;
         } else {
             return false;

@@ -43,7 +43,7 @@ public class MotorFrontEndSteps extends BaseWebUI {
 
     @And("^I enter the following for Motor FE login$")
     public void iEnterTheFollowingForMotorFELogin(DataTable table) throws InterruptedException {
-
+        Thread.sleep(1000);
         MotorFrontEndLoginPage loginPage = new MotorFrontEndLoginPage(base.Driver);
         List<Steps.User> users = new ArrayList<Steps.User>();
 
@@ -52,7 +52,7 @@ public class MotorFrontEndSteps extends BaseWebUI {
             loginPage.inputUserNamePassword(user.username, user.password);
         }
 
-        Thread.sleep(2000);
+
     }
 
     @And("^I click login button for Motor FE$")
@@ -62,7 +62,7 @@ public class MotorFrontEndSteps extends BaseWebUI {
     }
 
     @Given("^Login to Motor FE with below user$")
-    public void loginToMotorFEWithBelowUser(DataTable table) {
+    public void loginToMotorFEWithBelowUser(DataTable table) throws InterruptedException {
         MotorFrontEndHomePage FEHome = new MotorFrontEndHomePage(base.Driver);
         MotorFrontEndLoginPage loginPage = new MotorFrontEndLoginPage(base.Driver);
 
@@ -262,12 +262,12 @@ public class MotorFrontEndSteps extends BaseWebUI {
 
     @And("^Open Motor FE policy detail page for policy bundle id \"([^\"]*)\"$")
     public void openMotorFEPolicyDetailPageForPolicyBundleId(String arg0) throws InterruptedException {
-        String tagetURL ="https://motor-fe-mot229.easysunday.com/th/policy/" +arg0 ;
+        String tagetURL = base.motorBaseURL+ "/th/policy/" +arg0 ;
         Thread.sleep(2000);
         base.Driver.navigate().to(tagetURL);
 
 
-        Thread.sleep(5000);
+
 
 
     }

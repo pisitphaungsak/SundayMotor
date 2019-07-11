@@ -1,7 +1,7 @@
 Feature:
 
   @Test
-  Scenario Outline: grab pricing Toyota Corolla Altis 2010 - 2018
+  Scenario Outline: grab pricing Toyota Corolla Fortuner 2010 - 2018
     Given Open Sunday Grab Home Page
     And Login to Sunday by use below information
       | username                | password |

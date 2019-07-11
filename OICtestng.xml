@@ -3,17 +3,55 @@
 <suite name="All Test Suite" parallel="true">
     <test verbose="2" preserve-order="true" name="Validation">
         <classes>
-            <class name="com.test.oic.OICvalidateSumInsureOptionsV1Code110">
-                <methods>
-                    <include name="validateSumInsureValidOptionsV1Code110"/>
-                </methods>
-            </class>
 
-            <class name="com.test.oic.OICvalidateSumInsureOptionsV2Code110">
-                <methods>
-                    <include name="validateSumInsureValidOptionsV2Code110"/>
-                </methods>
-            </class>
+
+            <class name="com.test.oic.OICvalidatePolicyType"></class>
+            <class name="com.test.oic.OICvalidateCarCodeOptions"></class>
+
+            <class name="com.test.oic.OICvalidateCarSizeOptionsV1Code110"></class>
+            <class name="com.test.oic.OICvalidateCarSizeOptionsV1Code110"></class>
+            <class name="com.test.oic.OICvalidateCarSizeOptionsV1Code110"></class>
+            <class name="com.test.oic.OICvalidateCarSizeOptionsV1Code320"></class>
+            <class name="com.test.oic.OICvalidateCarSizeOptionsV1Code320"></class>
+            <class name="com.test.oic.OICvalidateCarSizeOptionsV1Code320"></class>
+
+            <class name="com.test.oic.OICvalidateDriverAgeOptionsV1Code110"></class>
+            <class name="com.test.oic.OICvalidateDriverAgeOptionsV2Code110"></class>
+            <class name="com.test.oic.OICvalidateDriverAgeOptionsV2Code110"></class>
+            <class name="com.test.oic.OICvalidateDriverAgeOptionsV1Code320"></class>
+            <class name="com.test.oic.OICvalidateDriverAgeOptionsV2Code320"></class>
+            <class name="com.test.oic.OICvalidateDriverAgeOptionsV3Code320"></class>
+
+            <class name="com.test.oic.OICvalidateCarAgeOptionsV1Code110"></class>
+            <class name="com.test.oic.OICvalidateCarAgeOptionsV2Code110"></class>
+            <class name="com.test.oic.OICvalidateCarAgeOptionsV3Code110"></class>
+            <class name="com.test.oic.OICvalidateCarAgeOptionsV1Code320"></class>
+            <class name="com.test.oic.OICvalidateCarAgeOptionsV2Code320"></class>
+            <class name="com.test.oic.OICvalidateCarAgeOptionsV3Code320"></class>
+
+            <class name="com.test.oic.OICvalidateSumInsureOptionsV1Code110"></class>
+            <class name="com.test.oic.OICvalidateSumInsureOptionsV2Code110"></class>
+            <class name="com.test.oic.OICvalidateSumInsureOptionsV3Code110"></class>
+            <class name="com.test.oic.OICvalidateSumInsureOptionsV1Code320"></class>
+            <class name="com.test.oic.OICvalidateSumInsureOptionsV2Code320"></class>
+            <class name="com.test.oic.OICvalidateSumInsureOptionsV3Code320"></class>
+
+            <class name="com.test.oic.OICvalidateCarGroupOptionsV1Code110"></class>
+            <class name="com.test.oic.OICvalidateCarGroupOptionsV2Code110"></class>
+            <class name="com.test.oic.OICvalidateCarGroupOptionsV3Code110"></class>
+            <class name="com.test.oic.OICvalidateCarGroupOptionsV1Code320"></class>
+            <class name="com.test.oic.OICvalidateCarGroupOptionsV2Code320"></class>
+            <class name="com.test.oic.OICvalidateCarGroupOptionsV3Code320"></class>
+
+
+
+
+
+
+
+
+
+
         </classes>
 
     </test>

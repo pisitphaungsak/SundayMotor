@@ -22,6 +22,7 @@ public class OICvalidateSumInsureOptionsV1Code110 extends BaseOIC{
         //Assert
         Assert.assertEquals(200, response.getStatusCode());
         Assert.assertTrue(response.getBody().jsonPath().get("IsValid"));
+
         Assert.assertTrue(compareNumber(response.getBody().jsonPath().get("SellNet"),expectedSellNet));
     }
 

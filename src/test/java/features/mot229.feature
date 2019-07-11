@@ -1,13 +1,7 @@
 Feature: Motor Front End Policy detail page
 
 
-  Scenario: Display Policy detail for first class policy
-    Given Open Motor Front End Home Page Without user login
-    And Open Motor Frontend login page
-    And Login to Motor FE with below user
-      | username               | password |
-      | motor.tester@gmail.com | motor9   |
-    And Open Motor FE policy detail page for policy bundle id "7"
+
 
 
   @Test

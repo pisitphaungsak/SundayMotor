@@ -13,6 +13,7 @@ public class MotorFrontEndCTPPage {
         PageFactory.initElements(driver,this);
     }
 
+    //Car-Plate
     @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/main/div/section/div[2]/div[1]")
     public WebElement lblCarplateTitle;
 
@@ -37,6 +38,15 @@ public class MotorFrontEndCTPPage {
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/main/div/section/div[2]/a/button")
     public WebElement  btnCarPlateOK;
+
+
+    //Car Selection
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/main/div/div/div[2]/div/div[1]/div/div[1]")
+    public WebElement  btnCarPackage;
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/main/div/div/div[2]/div/div[1]/div/div[2]")
+    public WebElement  btnPickupPackage;
+
 
 
 }

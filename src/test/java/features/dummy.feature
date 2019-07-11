@@ -21,17 +21,17 @@ Feature:
       | carmake | caryear | carmodel | submodel                                   | dashcamera | specifydriver | policytype | repairgrade | deductible |
       | TOYOTA  | 2007    | FORTUNER | Wagon 4dr V 7st Auto 4sp RWD 2.7i                          | no         | no            | 1          | 2           | 0          |
       | TOYOTA  | 2007    | FORTUNER | Wagon 4dr V Exclusive 7st Auto 4sp 4WD 2.7i                | no         | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2009    | FORTUNER | Wagon 4dr V 7st Auto 4sp RWD 3.0DCT                        | no         | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2016    | FORTUNER | Wagon 4dr TRD Sportivo 7st Auto 6sp RWD 2.8DCT (Black Top) | no         | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2017    | FORTUNER | Wagon 4dr G 7st Man 6sp RWD 2.4DCT                         | no         | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2007    | FORTUNER | Wagon 4dr V 7st Auto 4sp 4WD 2.7i                          | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2007    | FORTUNER | Wagon 4dr V Smart 7st Auto 4sp 4WD 3.0DCT                  | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2010    | FORTUNER | Wagon 4dr V 7st Auto 4sp RWD 3.0DCT                        | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | FORTUNER | Wagon 4dr G 7st Man 5sp RWD 2.5DCT                         | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2018    | FORTUNER | Wagon 4dr TRD Sportivo 7st Auto 6sp 4WD 2.8DCT             | yes        | no            | 1          | 2           | 0          |
-      | TOYOTA  | 2012    | FORTUNER | Wagon 4dr V 7st Auto 4sp RWD 3.0DCT                        | no         | yes           | 1          | 2           | 0          |
-      | TOYOTA  | 2011    | FORTUNER | Wagon 4dr V 7st Auto 4sp RWD 2.7i                          | yes        | yes           | 1          | 2           | 0          |
-      | TOYOTA  | 2018    | FORTUNER | Wagon 4dr V 7st Auto 6sp RWD 2.4DCT                        | yes        | yes           | 1          | 2           | 0          |
-      | TOYOTA  | 2018    | FORTUNER | Wagon 4dr V 7st Auto 6sp RWD 2.7i                          | yes        | yes           | 1          | 2           | 0          |
+    #  | TOYOTA  | 2009    | FORTUNER | Wagon 4dr V 7st Auto 4sp RWD 3.0DCT                        | no         | no            | 1          | 2           | 0          |
+     # | TOYOTA  | 2016    | FORTUNER | Wagon 4dr TRD Sportivo 7st Auto 6sp RWD 2.8DCT (Black Top) | no         | no            | 1          | 2           | 0          |
+      #| TOYOTA  | 2017    | FORTUNER | Wagon 4dr G 7st Man 6sp RWD 2.4DCT                         | no         | no            | 1          | 2           | 0          |
+      #| TOYOTA  | 2007    | FORTUNER | Wagon 4dr V 7st Auto 4sp 4WD 2.7i                          | yes        | no            | 1          | 2           | 0          |
+      #| TOYOTA  | 2007    | FORTUNER | Wagon 4dr V Smart 7st Auto 4sp 4WD 3.0DCT                  | yes        | no            | 1          | 2           | 0          |
+      #| TOYOTA  | 2010    | FORTUNER | Wagon 4dr V 7st Auto 4sp RWD 3.0DCT                        | yes        | no            | 1          | 2           | 0          |
+      #| TOYOTA  | 2011    | FORTUNER | Wagon 4dr G 7st Man 5sp RWD 2.5DCT                         | yes        | no            | 1          | 2           | 0          |
+      #| TOYOTA  | 2018    | FORTUNER | Wagon 4dr TRD Sportivo 7st Auto 6sp 4WD 2.8DCT             | yes        | no            | 1          | 2           | 0          |
+      #| TOYOTA  | 2012    | FORTUNER | Wagon 4dr V 7st Auto 4sp RWD 3.0DCT                        | no         | yes           | 1          | 2           | 0          |
+      #| TOYOTA  | 2011    | FORTUNER | Wagon 4dr V 7st Auto 4sp RWD 2.7i                          | yes        | yes           | 1          | 2           | 0          |
+      #| TOYOTA  | 2018    | FORTUNER | Wagon 4dr V 7st Auto 6sp RWD 2.4DCT                        | yes        | yes           | 1          | 2           | 0          |
+      #| TOYOTA  | 2018    | FORTUNER | Wagon 4dr V 7st Auto 6sp RWD 2.7i                          | yes        | yes           | 1          | 2           | 0          |
 
 

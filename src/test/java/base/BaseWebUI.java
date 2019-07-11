@@ -13,12 +13,11 @@ import java.io.IOException;
 public class BaseWebUI {
     public WebDriver Driver;
 
-    //URL
-    public String motorBaseURL = "https://motor-staging.easysunday.com/motor";
+    //URL Motor Staging
+    //public String motorBaseURL = "https://motor-staging.easysunday.com/motor";
+    public String motorBaseURL = "https://motor-fe-mot281.easysunday.com/motor";
 
     public String baseURL = "https://staging-02.easysunday.com/";
-
-    //public String baseURL = "https://staging-02.easysunday.com/";
 
     public String adnminBaseURL = "https://admin-staging-02.easysunday.com/";
 
@@ -44,6 +43,9 @@ public class BaseWebUI {
 
         }
     }
+
+
+
 
 
 }
