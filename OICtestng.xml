@@ -29,6 +29,9 @@
             <class name="com.test.oic.OICvalidateCarAgeOptionsV2Code320"></class>
             <class name="com.test.oic.OICvalidateCarAgeOptionsV3Code320"></class>
 
+
+
+            <class name="com.test.oic.OICValidateInvalidSumInsure"></class>
             <class name="com.test.oic.OICvalidateSumInsureOptionsV1Code110"></class>
             <class name="com.test.oic.OICvalidateSumInsureOptionsV2Code110"></class>
             <class name="com.test.oic.OICvalidateSumInsureOptionsV3Code110"></class>

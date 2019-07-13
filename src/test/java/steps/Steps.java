@@ -3,6 +3,7 @@ package steps;
 import base.BaseWebUI;
 import cucumber.api.DataTable;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -203,6 +204,15 @@ public class Steps extends BaseWebUI {
         actions.click(sundayHome.btnSaveUserProfile);
         actions.perform();
 
+
+    }
+
+    @Then("^Capture screen and file name is \"([^\"]*)\"$")
+    public void captureScreenAndFileNameIs(String arg0) throws Throwable {
+
+        String fileName = arg0 + ".png";
+
+        base.screenCapture(base.Driver,"/Users/pisit.ph/works/test/output/",fileName);
 
     }
 

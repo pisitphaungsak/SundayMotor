@@ -33,7 +33,7 @@ public class MotorFrontEndCTPSteps extends BaseWebUI {
 
     @Given("^Open Motor FE CTP car plate with this resolution \"([^\"]*)\" x \"([^\"]*)\"$")
     public void openMotorFECTPCarPlateWithThisResolutionX(int width, int height) throws Throwable {
-        String carPlateURL = motorBaseURL + "/th/ctp/car-plate";
+        String carPlateURL = "https://motor-fe-mot282.easysunday.com" + "/th/ctp/car-plate";
 
         Dimension dim = new Dimension(width,height);
 
@@ -43,7 +43,7 @@ public class MotorFrontEndCTPSteps extends BaseWebUI {
         base.Driver.manage().window().setSize(dim);
         base.Driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
-        base.screenCapture(base.Driver,"/Users/pisit.ph/works/output/","test2.png");
+
     }
 
     @When("^I select \"([^\"]*)\" plate$")
@@ -107,5 +107,12 @@ public class MotorFrontEndCTPSteps extends BaseWebUI {
     public void validateOkeyButtonIsEnabled() {
         MotorFrontEndCTPPage pageCTP = new MotorFrontEndCTPPage(base.Driver);
         Assert.assertTrue(pageCTP.btnCarPlateOK.isEnabled());
+    }
+
+    @And("^I click car plate submit button for moving to next page$")
+    public void iClickCarPlateSubmitButtonForMovingToNextPage() {
+        MotorFrontEndCTPPage pageCTP = new MotorFrontEndCTPPage(base.Driver);
+        pageCTP.btnSubmitCarPlate.click();
+
     }
 }

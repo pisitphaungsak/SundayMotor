@@ -6,7 +6,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 
 
-@CucumberOptions(features = {"src/test/java/features/"}, glue = "steps")
+@CucumberOptions(features = {"src/test/java/features/"}, format = {"json:target/cucumber.json"}, glue = "steps")
 public class TestRunner extends AbstractTestNGCucumberTests {
 
 }

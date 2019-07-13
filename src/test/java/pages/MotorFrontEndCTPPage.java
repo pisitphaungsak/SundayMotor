@@ -24,6 +24,9 @@ public class MotorFrontEndCTPPage {
     public WebElement btnPlateYellow;
 
 
+    @FindBy(how = How.XPATH, using = "//button[@data-qe-id='nextButton']")
+    public WebElement btnSubmitCarPlate;
+
 
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/section/main/div/section/div[2]/div[3]/div[1]")

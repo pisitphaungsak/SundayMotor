@@ -51,8 +51,8 @@ public class OICvalidateCarCodeOptions extends BaseOIC {
         Response response = request.post(APIPath);
 
         //Assert
-        Assert.assertNotEquals(response.getStatusCode(), 200);
-        Assert.assertEquals(response.getBody().jsonPath().get("message"), "Internal server error");
+        Assert.assertEquals(response.getStatusCode(), 422);
+       // Assert.assertEquals(response.getBody().jsonPath().get("message"), "Internal server error");
 
 
     }

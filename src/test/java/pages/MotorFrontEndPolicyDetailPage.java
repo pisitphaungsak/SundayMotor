@@ -111,5 +111,4 @@ public class MotorFrontEndPolicyDetailPage {
     public WebElement c_lblshowCPTDetailtoggle;
 
 
-
 }

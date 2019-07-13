@@ -21,13 +21,15 @@ public class OICvalidateParameterDatatype extends BaseOIC{
         //Assert
         response.prettyPrint();
 
-       // Assert.assertEquals(200, response.getStatusCode());
+        Assert.assertEquals(422, response.getStatusCode());
+        //Assert.assertTrue(compareNumber(response.getBody().jsonPath().get("Message"),expectedSellNet));
 
     }
 
     @DataProvider(name = "V1Code110SumInsureOptionsTestData")
     public Object[][] validateDriverAgeTestData() {
         return new Object[][]{
+                {11686.54, "v1", "110", 1995, 15, 3, 50000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0},
                 {11686.54, "v1", "110", 1995, 0, 3, 50000, 2, 1000000, 10000000, 2500000, 7, 200000, 200000, 300000, 0}
         };
 
